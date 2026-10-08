@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Crear un NIDO"
+    >
+
+    <title>Crear NIDO — NIDO</title>
+
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <main class="create-nido-page">
+
+
+        <section class="create-nido-card">
+
+
+            <!-- LOGO -->
+
+            <div class="auth-logo">
+                NIDO
+            </div>
+
+
+            <!-- ICONO -->
+
+            <div
+                id="createNidoIcon"
+                class="selected-type-icon"
+            >
+                ❤️
+            </div>
+
+
+            <!-- TÍTULO -->
+
+            <h1>
+                Crea tu NIDO
+            </h1>
+
+
+            <!-- DESCRIPCIÓN -->
+
+            <p class="auth-description">
+
+                Dale un nombre a tu espacio.
+
+            </p>
+
+
+            <!-- FORMULARIO -->
+
+            <form
+                id="createNidoForm"
+            >
+
+
+                <div class="form-group">
+
+                    <label for="nidoName">
+                        Nombre del NIDO
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="nidoName"
+                        name="nidoName"
+                        placeholder="Ej. Nuestra casa"
+                        autocomplete="off"
+                        maxlength="50"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary-button auth-button"
+                >
+                    CREAR NIDO
+                </button>
+
+
+            </form>
+
+
+            <!-- VOLVER -->
+
+            <button
+                id="backButton"
+                class="back-button"
+                type="button"
+            >
+                ← Volver
+            </button>
+
+
+        </section>
+
+
+    </main>
+
+
+   <script src="js/nido-storage.js"></script>
+<script src="js/create-nido.js"></script>
+
+
+</body>
+
+</html>

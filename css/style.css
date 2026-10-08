@@ -1,0 +1,6775 @@
+/* =====================================================
+   NIDO
+   ESTILOS PRINCIPALES
+===================================================== */
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+:root {
+
+    --verde-nido: #6e7d5b;
+
+    --beige: #f3eee4;
+
+    --beige-claro: #faf8f3;
+
+    --blanco: #ffffff;
+
+    --negro: #222222;
+
+    --gris: #777777;
+
+}
+
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+/* =====================================================
+   HTML Y BODY
+===================================================== */
+
+html,
+body {
+
+    width: 100%;
+
+    min-height: 100%;
+
+}
+
+
+body {
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    background:
+        var(--beige);
+
+    color:
+        var(--negro);
+
+}
+
+
+/* =====================================================
+   PANTALLA DE BIENVENIDA
+===================================================== */
+
+.welcome {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+}
+
+
+/* =====================================================
+   TARJETA
+===================================================== */
+
+.welcome-card {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    background:
+        var(--beige-claro);
+
+    border-radius: 28px;
+
+    padding:
+        55px 45px;
+
+    text-align: center;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.logo {
+
+    display: inline-block;
+
+    color:
+        var(--verde-nido);
+
+    font-size: 42px;
+
+    font-weight: 800;
+
+    letter-spacing:
+        5px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.welcome-card h1 {
+
+    font-size: 29px;
+
+    line-height: 1.2;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+
+}
+
+
+/* =====================================================
+   DESCRIPCIÓN
+===================================================== */
+
+.description {
+
+    color:
+        var(--gris);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =====================================================
+   BOTÓN PRINCIPAL
+===================================================== */
+
+.primary-button {
+
+    width: 100%;
+
+    border: none;
+
+    background:
+        var(--verde-nido);
+
+    color:
+        var(--blanco);
+
+    padding:
+        15px 20px;
+
+    border-radius:
+        12px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    letter-spacing:
+        0.8px;
+
+    cursor: pointer;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.primary-button:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(110, 125, 91, 0.25);
+
+}
+
+
+/* =====================================================
+   BOTÓN SECUNDARIO
+===================================================== */
+
+.secondary-button {
+
+    width: 100%;
+
+    border: none;
+
+    background:
+        transparent;
+
+    color:
+        var(--verde-nido);
+
+    padding:
+        15px 20px;
+
+    margin-top: 10px;
+
+    border-radius:
+        12px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.secondary-button:hover {
+
+    background:
+        rgba(110, 125, 91, 0.08);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .welcome {
+
+        padding: 20px;
+
+    }
+
+
+    .welcome-card {
+
+        padding:
+            45px 25px;
+
+        border-radius:
+            22px;
+
+    }
+
+
+    .logo {
+
+        font-size:
+            36px;
+
+    }
+
+
+    .welcome-card h1 {
+
+        font-size:
+            25px;
+
+    }
+
+
+}
+
+/* =====================================================
+   NIDO
+   PANTALLA CREAR CUENTA
+===================================================== */
+
+
+/* =====================================================
+   PÁGINA
+===================================================== */
+
+.auth-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+}
+
+
+/* =====================================================
+   TARJETA
+===================================================== */
+
+.auth-card {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    background:
+        var(--beige-claro);
+
+    border-radius:
+        28px;
+
+    padding:
+        40px 45px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* =====================================================
+   BOTÓN VOLVER
+===================================================== */
+
+.back-button {
+
+    border: none;
+
+    background: transparent;
+
+    color:
+        var(--gris);
+
+    font-size:
+        14px;
+
+    cursor: pointer;
+
+    padding: 0;
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.back-button:hover {
+
+    color:
+        var(--verde-nido);
+
+}
+
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.auth-logo {
+
+    color:
+        var(--verde-nido);
+
+    font-size:
+        32px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        4px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.auth-card h1 {
+
+    font-size:
+        28px;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+/* =====================================================
+   DESCRIPCIÓN
+===================================================== */
+
+.auth-description {
+
+    color:
+        var(--gris);
+
+    font-size:
+        15px;
+
+    margin-bottom:
+        28px;
+
+}
+
+
+/* =====================================================
+   FORMULARIO
+===================================================== */
+
+#registerForm {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        18px;
+
+}
+
+
+/* =====================================================
+   GRUPO
+===================================================== */
+
+.form-group {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        7px;
+
+}
+
+
+/* =====================================================
+   LABEL
+===================================================== */
+
+.form-group label {
+
+    font-size:
+        13px;
+
+    font-weight:
+        600;
+
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.form-group input {
+
+    width: 100%;
+
+    border:
+        1px solid
+        #ddd8ce;
+
+    background:
+        var(--blanco);
+
+    color:
+        var(--negro);
+
+    padding:
+        14px;
+
+    border-radius:
+        11px;
+
+    font-size:
+        14px;
+
+    outline: none;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.form-group input:focus {
+
+    border-color:
+        var(--verde-nido);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(110, 125, 91, 0.10);
+
+}
+
+
+/* =====================================================
+   BOTÓN CREAR
+===================================================== */
+
+.auth-button {
+
+    margin-top:
+        5px;
+
+}
+
+
+/* =====================================================
+   CUENTA
+===================================================== */
+
+.account-text {
+
+    text-align:
+        center;
+
+    margin-top:
+        25px;
+
+    color:
+        var(--gris);
+
+    font-size:
+        13px;
+
+}
+
+
+/* =====================================================
+   BOTÓN TEXTO
+===================================================== */
+
+.text-button {
+
+    border:
+        none;
+
+    background:
+        transparent;
+
+    color:
+        var(--verde-nido);
+
+    font-weight:
+        700;
+
+    cursor:
+        pointer;
+
+    font-size:
+        13px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .auth-page {
+
+        padding:
+            20px;
+
+    }
+
+
+    .auth-card {
+
+        padding:
+            30px 25px;
+
+        border-radius:
+            22px;
+
+    }
+
+
+    .auth-card h1 {
+
+        font-size:
+            25px;
+
+    }
+
+}
+
+/* =====================================================
+   NIDO
+   ELECCIÓN DEL TIPO DE NIDO
+===================================================== */
+
+
+/* =====================================================
+   PÁGINA
+===================================================== */
+
+.nido-type-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+}
+
+
+/* =====================================================
+   TARJETA
+===================================================== */
+
+.nido-type-card {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    background:
+        var(--beige-claro);
+
+    border-radius:
+        28px;
+
+    padding:
+        45px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.nido-type-card h1 {
+
+    font-size:
+        28px;
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+/* =====================================================
+   OPCIONES
+===================================================== */
+
+.nido-options {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        12px;
+
+}
+
+
+/* =====================================================
+   OPCIÓN
+===================================================== */
+
+.nido-option {
+
+    width: 100%;
+
+    border:
+        1px solid
+        #e3ded4;
+
+    background:
+        var(--blanco);
+
+    border-radius:
+        16px;
+
+    padding:
+        17px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    text-align:
+        left;
+
+    cursor:
+        pointer;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.nido-option:hover {
+
+    border-color:
+        var(--verde-nido);
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.06);
+
+}
+
+
+/* =====================================================
+   ICONO
+===================================================== */
+
+.nido-option-icon {
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    border-radius:
+        14px;
+
+    background:
+        var(--beige);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        22px;
+
+    flex-shrink:
+        0;
+
+}
+
+
+/* =====================================================
+   CONTENIDO
+===================================================== */
+
+.nido-option-content {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        4px;
+
+    flex:
+        1;
+
+}
+
+
+.nido-option-content strong {
+
+    font-size:
+        15px;
+
+    color:
+        var(--negro);
+
+}
+
+
+.nido-option-content small {
+
+    font-size:
+        12px;
+
+    line-height:
+        1.4;
+
+    color:
+        var(--gris);
+
+}
+
+
+/* =====================================================
+   FLECHA
+===================================================== */
+
+.nido-option-arrow {
+
+    font-size:
+        20px;
+
+    color:
+        var(--gris);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .nido-type-page {
+
+        padding:
+            20px;
+
+    }
+
+
+    .nido-type-card {
+
+        padding:
+            30px 22px;
+
+        border-radius:
+            22px;
+
+    }
+
+
+    .nido-type-card h1 {
+
+        font-size:
+            25px;
+
+    }
+
+}
+
+/* =====================================================
+   NIDO
+   CREAR O UNIRSE
+===================================================== */
+
+
+/* =====================================================
+   PÁGINA
+===================================================== */
+
+.nido-action-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+}
+
+
+/* =====================================================
+   TARJETA
+===================================================== */
+
+.nido-action-card {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    background:
+        var(--beige-claro);
+
+    border-radius:
+        28px;
+
+    padding:
+        45px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* =====================================================
+   ICONO DEL TIPO
+===================================================== */
+
+.selected-type-icon {
+
+    width:
+        58px;
+
+    height:
+        58px;
+
+    border-radius:
+        18px;
+
+    background:
+        var(--beige);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        27px;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.nido-action-card h1 {
+
+    font-size:
+        28px;
+
+    margin-bottom:
+        8px;
+
+}
+
+
+/* =====================================================
+   OPCIONES
+===================================================== */
+
+.nido-actions {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        12px;
+
+}
+
+
+/* =====================================================
+   BOTÓN
+===================================================== */
+
+.nido-action-button {
+
+    width:
+        100%;
+
+    border:
+        1px solid
+        #e3ded4;
+
+    background:
+        var(--blanco);
+
+    border-radius:
+        16px;
+
+    padding:
+        18px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        15px;
+
+    text-align:
+        left;
+
+    cursor:
+        pointer;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.nido-action-button:hover {
+
+    border-color:
+        var(--verde-nido);
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0, 0, 0, 0.06);
+
+}
+
+
+/* =====================================================
+   ICONO
+===================================================== */
+
+.nido-action-icon {
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    border-radius:
+        14px;
+
+    background:
+        var(--verde-nido);
+
+    color:
+        var(--blanco);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        24px;
+
+    flex-shrink:
+        0;
+
+}
+
+
+/* =====================================================
+   CONTENIDO
+===================================================== */
+
+.nido-action-content {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        4px;
+
+    flex:
+        1;
+
+}
+
+
+.nido-action-content strong {
+
+    font-size:
+        15px;
+
+}
+
+
+.nido-action-content small {
+
+    color:
+        var(--gris);
+
+    font-size:
+        12px;
+
+    line-height:
+        1.4;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .nido-action-page {
+
+        padding:
+            20px;
+
+    }
+
+
+    .nido-action-card {
+
+        padding:
+            30px 22px;
+
+        border-radius:
+            22px;
+
+    }
+
+
+    .nido-action-card h1 {
+
+        font-size:
+            25px;
+
+    }
+
+}
+
+/* =====================================================
+   NIDO
+   CREAR NIDO
+===================================================== */
+
+
+/* =====================================================
+   PÁGINA
+===================================================== */
+
+.create-nido-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+
+}
+
+
+/* =====================================================
+   TARJETA
+===================================================== */
+
+.create-nido-card {
+
+    width: 100%;
+
+    max-width: 480px;
+
+    background:
+        var(--beige-claro);
+
+    border-radius:
+        28px;
+
+    padding:
+        45px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.create-nido-card h1 {
+
+    font-size:
+        28px;
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+/* =====================================================
+   FORMULARIO
+===================================================== */
+
+#createNidoForm {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        18px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .create-nido-page {
+
+        padding:
+            20px;
+
+    }
+
+
+    .create-nido-card {
+
+        padding:
+            30px 25px;
+
+        border-radius:
+            22px;
+
+    }
+
+
+    .create-nido-card h1 {
+
+        font-size:
+            25px;
+
+    }
+
+}
+/* =====================================================
+   NIDO
+   DASHBOARD
+===================================================== */
+
+
+/* =====================================================
+   PÁGINA
+===================================================== */
+
+.dashboard-page {
+
+    width: 100%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding:
+        35px 30px 120px;
+
+}
+
+
+/* =====================================================
+   CABECERA
+===================================================== */
+
+.dashboard-header {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.dashboard-greeting {
+
+    color:
+        var(--gris);
+
+    font-size:
+        14px;
+
+    margin-bottom:
+        3px;
+
+}
+
+
+.dashboard-header h1 {
+
+    font-size:
+        30px;
+
+    line-height:
+        1.1;
+
+}
+
+
+.dashboard-logo {
+
+    color:
+        var(--verde-nido);
+
+    font-size:
+        24px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        3px;
+
+}
+
+
+/* =====================================================
+   RESUMEN DEL NIDO
+===================================================== */
+
+.nido-summary {
+
+    background:
+        var(--beige-claro);
+
+    border:
+        1px solid
+        #e5dfd4;
+
+    border-radius:
+        20px;
+
+    padding:
+        20px 22px;
+
+    margin-bottom:
+        18px;
+
+}
+
+
+.nido-summary-top {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        15px;
+
+}
+
+
+.summary-label {
+
+    display:
+        block;
+
+    color:
+        var(--gris);
+
+    font-size:
+        11px;
+
+    text-transform:
+        uppercase;
+
+    letter-spacing:
+        1px;
+
+    margin-bottom:
+        5px;
+
+}
+
+
+.nido-summary h2 {
+
+    font-size:
+        20px;
+
+}
+
+
+.nido-type-label {
+
+    background:
+        var(--beige);
+
+    color:
+        var(--verde-nido);
+
+    padding:
+        7px 11px;
+
+    border-radius:
+        20px;
+
+    font-size:
+        12px;
+
+    font-weight:
+        700;
+
+}
+
+
+/* =====================================================
+   BALANCE
+===================================================== */
+
+.balance-card {
+
+    background:
+        var(--verde-nido);
+
+    color:
+        var(--blanco);
+
+    border-radius:
+        24px;
+
+    padding:
+        25px;
+
+    margin-bottom:
+        18px;
+
+    box-shadow:
+        0 15px 35px
+        rgba(110, 125, 91, 0.20);
+
+}
+
+
+.balance-header {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    font-size:
+        13px;
+
+    opacity:
+        0.9;
+
+}
+
+
+.balance-icon {
+
+    width:
+        32px;
+
+    height:
+        32px;
+
+    border-radius:
+        10px;
+
+    background:
+        rgba(255,255,255,0.15);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-weight:
+        700;
+
+}
+
+
+.balance-amount {
+
+    font-size:
+        34px;
+
+    font-weight:
+        750;
+
+    margin-top:
+        10px;
+
+}
+
+
+.balance-divider {
+
+    height:
+        1px;
+
+    background:
+        rgba(255,255,255,0.20);
+
+    margin:
+        20px 0;
+
+}
+
+
+.balance-details {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        20px;
+
+}
+
+
+.balance-details div {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        5px;
+
+}
+
+
+.balance-details span {
+
+    font-size:
+        12px;
+
+    opacity:
+        0.75;
+
+}
+
+
+.balance-details strong {
+
+    font-size:
+        16px;
+
+}
+
+
+.income-value {
+
+    color:
+        #f1f5eb;
+
+}
+
+
+.expense-value {
+
+    color:
+        #f4dfd8;
+
+}
+
+
+/* =====================================================
+   ACCIONES
+===================================================== */
+
+.quick-actions {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:
+        12px;
+
+    margin-bottom:
+        35px;
+
+}
+
+
+.quick-action {
+
+    border:
+        1px solid
+        #e2ddd4;
+
+    background:
+        var(--beige-claro);
+
+    border-radius:
+        16px;
+
+    padding:
+        16px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+    cursor:
+        pointer;
+
+    font-size:
+        14px;
+
+    font-weight:
+        700;
+
+    color:
+        var(--negro);
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.quick-action:hover {
+
+    transform:
+        translateY(-2px);
+
+    border-color:
+        var(--verde-nido);
+
+}
+
+
+.quick-action-icon {
+
+    width:
+        38px;
+
+    height:
+        38px;
+
+    border-radius:
+        12px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        21px;
+
+    font-weight:
+        600;
+
+}
+
+
+.income-action .quick-action-icon {
+
+    background:
+        rgba(110,125,91,0.12);
+
+    color:
+        var(--verde-nido);
+
+}
+
+
+.expense-action .quick-action-icon {
+
+    background:
+        rgba(190,100,80,0.10);
+
+    color:
+        #a75f50;
+
+}
+
+
+/* =====================================================
+   SECCIÓN MOVIMIENTOS
+===================================================== */
+
+.recent-section {
+
+    margin-top:
+        10px;
+
+}
+
+
+.section-heading {
+
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        space-between;
+
+    margin-bottom:
+        15px;
+
+}
+
+
+.section-kicker {
+
+    display:
+        block;
+
+    color:
+        var(--verde-nido);
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1.5px;
+
+    margin-bottom:
+        4px;
+
+}
+
+
+.section-heading h2 {
+
+    font-size:
+        21px;
+
+}
+
+
+.view-all-button {
+
+    border:
+        none;
+
+    background:
+        transparent;
+
+    color:
+        var(--verde-nido);
+
+    font-size:
+        13px;
+
+    font-weight:
+        700;
+
+    cursor:
+        pointer;
+
+}
+
+
+/* =====================================================
+   MOVIMIENTOS
+===================================================== */
+
+.recent-movements {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        10px;
+
+}
+
+
+.empty-state {
+
+    background:
+        var(--beige-claro);
+
+    border:
+        1px dashed
+        #d8d1c5;
+
+    border-radius:
+        18px;
+
+    padding:
+        35px 20px;
+
+    text-align:
+        center;
+
+}
+
+
+.empty-state-icon {
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    border-radius:
+        15px;
+
+    background:
+        var(--beige);
+
+    color:
+        var(--verde-nido);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    margin:
+        0 auto 12px;
+
+    font-weight:
+        800;
+
+}
+
+
+.empty-state p {
+
+    font-size:
+        14px;
+
+    font-weight:
+        600;
+
+    margin-bottom:
+        5px;
+
+}
+
+
+.empty-state small {
+
+    color:
+        var(--gris);
+
+    font-size:
+        12px;
+
+}
+
+
+/* =====================================================
+   NAVEGACIÓN INFERIOR
+===================================================== */
+
+.bottom-navigation {
+
+    position:
+        fixed;
+
+    left:
+        50%;
+
+    bottom:
+        18px;
+
+    transform:
+        translateX(-50%);
+
+    width:
+        min(680px, calc(100% - 30px));
+
+    background:
+        rgba(250,248,243,0.96);
+
+    border:
+        1px solid
+        #e0dbd1;
+
+    border-radius:
+        20px;
+
+    padding:
+        8px;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        4px;
+
+    box-shadow:
+        0 12px 35px
+        rgba(0,0,0,0.10);
+
+    z-index:
+        100;
+
+    backdrop-filter:
+        blur(10px);
+
+}
+
+
+.nav-item {
+
+    border:
+        none;
+
+    background:
+        transparent;
+
+    color:
+        var(--gris);
+
+    padding:
+        9px 5px;
+
+    border-radius:
+        14px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    gap:
+        3px;
+
+    cursor:
+        pointer;
+
+    font-size:
+        10px;
+
+    font-weight:
+        600;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.nav-icon {
+
+    font-size:
+        19px;
+
+    line-height:
+        1;
+
+}
+
+
+.nav-item.active {
+
+    background:
+        var(--verde-nido);
+
+    color:
+        var(--blanco);
+
+}
+
+
+.nav-item:hover:not(.active) {
+
+    background:
+        var(--beige);
+
+    color:
+        var(--verde-nido);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .dashboard-page {
+
+        padding:
+            25px 18px 115px;
+
+    }
+
+
+    .dashboard-header h1 {
+
+        font-size:
+            26px;
+
+    }
+
+
+    .dashboard-logo {
+
+        font-size:
+            20px;
+
+    }
+
+
+    .balance-card {
+
+        padding:
+            22px;
+
+        border-radius:
+            20px;
+
+    }
+
+
+    .balance-amount {
+
+        font-size:
+            30px;
+
+    }
+
+
+    .quick-actions {
+
+        gap:
+            8px;
+
+    }
+
+
+    .quick-action {
+
+        padding:
+            13px 11px;
+
+        font-size:
+            12px;
+
+    }
+
+
+    .quick-action-icon {
+
+        width:
+            34px;
+
+        height:
+            34px;
+
+        border-radius:
+            10px;
+
+    }
+
+
+    .section-heading h2 {
+
+        font-size:
+            19px;
+
+    }
+
+
+    .bottom-navigation {
+
+        bottom:
+            10px;
+
+        width:
+            calc(100% - 20px);
+
+    }
+
+}
+
+/* =====================================================
+   NIDO
+   AÑADIR INGRESO / GASTO
+===================================================== */
+
+
+/* =====================================================
+   PÁGINA
+===================================================== */
+
+.transaction-page {
+
+    min-height:
+        100vh;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        30px;
+
+}
+
+
+/* =====================================================
+   TARJETA
+===================================================== */
+
+.transaction-card {
+
+    width:
+        100%;
+
+    max-width:
+        480px;
+
+    background:
+        var(--beige-claro);
+
+    border-radius:
+        28px;
+
+    padding:
+        40px 45px;
+
+    box-shadow:
+        0 20px 60px
+        rgba(0, 0, 0, 0.08);
+
+}
+
+
+/* =====================================================
+   ICONO
+===================================================== */
+
+.transaction-icon {
+
+    width:
+        58px;
+
+    height:
+        58px;
+
+    border-radius:
+        18px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        30px;
+
+    font-weight:
+        500;
+
+    margin-bottom:
+        18px;
+
+}
+
+
+.income-transaction-icon {
+
+    background:
+        rgba(110,125,91,0.12);
+
+    color:
+        var(--verde-nido);
+
+}
+
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.transaction-card h1 {
+
+    font-size:
+        28px;
+
+    line-height:
+        1.2;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+/* =====================================================
+   FORMULARIO
+===================================================== */
+
+#incomeForm {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        18px;
+
+}
+
+
+/* =====================================================
+   CANTIDAD
+===================================================== */
+
+.amount-input {
+
+    position:
+        relative;
+
+}
+
+
+.amount-input input {
+
+    padding-right:
+        45px;
+
+}
+
+
+.amount-input span {
+
+    position:
+        absolute;
+
+    right:
+        15px;
+
+    top:
+        50%;
+
+    transform:
+        translateY(-50%);
+
+    color:
+        var(--gris);
+
+    font-weight:
+        600;
+
+}
+
+
+/* =====================================================
+   SELECT
+===================================================== */
+
+.form-group select {
+
+    width:
+        100%;
+
+    border:
+        1px solid
+        #ddd8ce;
+
+    background:
+        var(--blanco);
+
+    color:
+        var(--negro);
+
+    padding:
+        14px;
+
+    border-radius:
+        11px;
+
+    font-size:
+        14px;
+
+    outline:
+        none;
+
+    cursor:
+        pointer;
+
+}
+
+
+.form-group select:focus {
+
+    border-color:
+        var(--verde-nido);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(110,125,91,0.10);
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .transaction-page {
+
+        padding:
+            20px;
+
+    }
+
+
+    .transaction-card {
+
+        padding:
+            30px 25px;
+
+        border-radius:
+            22px;
+
+    }
+
+
+    .transaction-card h1 {
+
+        font-size:
+            25px;
+
+    }
+
+}
+
+/* =====================================================
+   GASTO
+===================================================== */
+
+.expense-transaction-icon {
+
+    background:
+        rgba(167,95,80,0.10);
+
+    color:
+        #a75f50;
+
+}
+
+/* =====================================================
+   NIDO
+   MOVIMIENTOS
+===================================================== */
+
+
+/* =====================================================
+   PÁGINA
+===================================================== */
+
+.movements-page {
+
+    width:
+        100%;
+
+    max-width:
+        900px;
+
+    margin:
+        0 auto;
+
+    padding:
+        35px 30px 120px;
+
+}
+
+
+/* =====================================================
+   CABECERA
+===================================================== */
+
+.page-header {
+
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        space-between;
+
+    margin-bottom:
+        25px;
+
+}
+
+
+.page-header h1 {
+
+    font-size:
+        30px;
+
+    line-height:
+        1.1;
+
+}
+
+
+/* =====================================================
+   RESUMEN
+===================================================== */
+
+.movement-summary {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        12px;
+
+    margin-bottom:
+        20px;
+
+}
+
+
+.movement-summary > div {
+
+    background:
+        var(--beige-claro);
+
+    border:
+        1px solid
+        #e4ded3;
+
+    border-radius:
+        16px;
+
+    padding:
+        17px;
+
+}
+
+
+.movement-summary span {
+
+    display:
+        block;
+
+    color:
+        var(--gris);
+
+    font-size:
+        11px;
+
+    margin-bottom:
+        7px;
+
+}
+
+
+.movement-summary strong {
+
+    font-size:
+        17px;
+
+}
+
+
+.summary-income {
+
+    color:
+        var(--verde-nido);
+
+}
+
+
+.summary-expense {
+
+    color:
+        #a75f50;
+
+}
+
+
+/* =====================================================
+   FILTROS
+===================================================== */
+
+.movement-filters {
+
+    display:
+        flex;
+
+    gap:
+        8px;
+
+    margin-bottom:
+        18px;
+
+}
+
+
+.movement-filter {
+
+    border:
+        1px solid
+        #ddd8ce;
+
+    background:
+        var(--beige-claro);
+
+    color:
+        var(--gris);
+
+    padding:
+        9px 15px;
+
+    border-radius:
+        20px;
+
+    font-size:
+        12px;
+
+    font-weight:
+        600;
+
+    cursor:
+        pointer;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+.movement-filter.active {
+
+    background:
+        var(--verde-nido);
+
+    border-color:
+        var(--verde-nido);
+
+    color:
+        var(--blanco);
+
+}
+
+
+/* =====================================================
+   LISTA
+===================================================== */
+
+.movements-list {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        10px;
+
+}
+
+
+/* =====================================================
+   MOVIMIENTO
+===================================================== */
+
+.movement-item {
+
+    background:
+        var(--beige-claro);
+
+    border:
+        1px solid
+        #e4ded3;
+
+    border-radius:
+        17px;
+
+    padding:
+        15px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        13px;
+
+}
+
+
+.movement-icon {
+
+    width:
+        43px;
+
+    height:
+        43px;
+
+    border-radius:
+        13px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        20px;
+
+    font-weight:
+        600;
+
+    flex-shrink:
+        0;
+
+}
+
+
+.movement-icon-income {
+
+    background:
+        rgba(110,125,91,0.12);
+
+    color:
+        var(--verde-nido);
+
+}
+
+
+.movement-icon-expense {
+
+    background:
+        rgba(167,95,80,0.10);
+
+    color:
+        #a75f50;
+
+}
+
+
+/* =====================================================
+   INFORMACIÓN
+===================================================== */
+
+.movement-info {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        4px;
+
+    flex:
+        1;
+
+    min-width:
+        0;
+
+}
+
+
+.movement-info strong {
+
+    font-size:
+        14px;
+
+    overflow:
+        hidden;
+
+    text-overflow:
+        ellipsis;
+
+    white-space:
+        nowrap;
+
+}
+
+
+.movement-info span {
+
+    color:
+        var(--gris);
+
+    font-size:
+        11px;
+
+}
+
+
+/* =====================================================
+   DERECHA
+===================================================== */
+
+.movement-right {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+}
+
+
+.movement-right > strong {
+
+    font-size:
+        14px;
+
+    white-space:
+        nowrap;
+
+}
+
+
+.movement-income {
+
+    color:
+        var(--verde-nido);
+
+}
+
+
+.movement-expense {
+
+    color:
+        #a75f50;
+
+}
+
+
+/* =====================================================
+   ELIMINAR
+===================================================== */
+
+.delete-movement {
+
+    width:
+        28px;
+
+    height:
+        28px;
+
+    border:
+        none;
+
+    background:
+        transparent;
+
+    color:
+        #aaa;
+
+    font-size:
+        20px;
+
+    line-height:
+        1;
+
+    cursor:
+        pointer;
+
+    border-radius:
+        8px;
+
+}
+
+
+.delete-movement:hover {
+
+    background:
+        #f0ebe3;
+
+    color:
+        #a75f50;
+
+}
+
+
+/* =====================================================
+   VACÍO
+===================================================== */
+
+.movements-empty {
+
+    background:
+        var(--beige-claro);
+
+    border:
+        1px dashed
+        #d8d1c5;
+
+    border-radius:
+        18px;
+
+    padding:
+        45px 20px;
+
+    text-align:
+        center;
+
+}
+
+
+.movements-empty p {
+
+    font-size:
+        14px;
+
+    font-weight:
+        600;
+
+    margin-bottom:
+        5px;
+
+}
+
+
+.movements-empty small {
+
+    color:
+        var(--gris);
+
+    font-size:
+        12px;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .movements-page {
+
+        padding:
+            25px 18px 115px;
+
+    }
+
+
+    .page-header h1 {
+
+        font-size:
+            26px;
+
+    }
+
+
+    .movement-summary {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .movement-summary > div {
+
+        padding:
+            14px;
+
+    }
+
+
+    .movement-item {
+
+        padding:
+            13px;
+
+    }
+
+
+    .movement-right {
+
+        gap:
+            5px;
+
+    }
+
+
+    .movement-right > strong {
+
+        font-size:
+            12px;
+
+    }
+
+
+    .delete-movement {
+
+        width:
+            25px;
+
+        height:
+            25px;
+
+    }
+
+}
+
+/* =====================================================
+   ÚLTIMOS MOVIMIENTOS — DASHBOARD
+===================================================== */
+
+.recent-movement {
+
+    background:
+        var(--beige-claro);
+
+    border:
+        1px solid
+        #e4ded3;
+
+    border-radius:
+        17px;
+
+    padding:
+        14px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+}
+
+
+.recent-movement-icon {
+
+    width:
+        42px;
+
+    height:
+        42px;
+
+    border-radius:
+        13px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    font-size:
+        19px;
+
+    font-weight:
+        600;
+
+    flex-shrink:
+        0;
+
+}
+
+
+.recent-icon-income {
+
+    background:
+        rgba(110,125,91,0.12);
+
+    color:
+        var(--verde-nido);
+
+}
+
+
+.recent-icon-expense {
+
+    background:
+        rgba(167,95,80,0.10);
+
+    color:
+        #a75f50;
+
+}
+
+
+.recent-movement-info {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        4px;
+
+    flex:
+        1;
+
+    min-width:
+        0;
+
+}
+
+
+.recent-movement-info strong {
+
+    font-size:
+        14px;
+
+    overflow:
+        hidden;
+
+    text-overflow:
+        ellipsis;
+
+    white-space:
+        nowrap;
+
+}
+
+
+.recent-movement-info span {
+
+    color:
+        var(--gris);
+
+    font-size:
+        11px;
+
+}
+
+
+.recent-income {
+
+    color:
+        var(--verde-nido);
+
+    font-size:
+        14px;
+
+    white-space:
+        nowrap;
+
+}
+
+
+.recent-expense {
+
+    color:
+        #a75f50;
+
+    font-size:
+        14px;
+
+    white-space:
+        nowrap;
+
+}
+
+/* =====================================================
+   OBJETIVOS
+===================================================== */
+
+.goals-intro {
+    margin-bottom: 24px;
+}
+
+.goals-intro h2 {
+    margin: 0 0 8px;
+    color: var(--negro);
+    font-size: 22px;
+}
+
+.goals-intro p {
+    margin: 0;
+    color: var(--gris);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.goal-add-button {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.goals-section {
+    width: 100%;
+}
+
+.goals-section .empty-state {
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.empty-state-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.empty-state h3 {
+    margin: 0 0 8px;
+    color: var(--negro);
+    font-size: 18px;
+}
+
+.empty-state p {
+    margin: 0;
+    color: var(--gris);
+    font-size: 14px;
+}
+
+/* =====================================================
+   FORMULARIO DE OBJETIVOS
+===================================================== */
+
+.transaction-description {
+    margin: 0 0 25px;
+    color: var(--gris);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#goalForm {
+    width: 100%;
+}
+
+#goalForm .form-group {
+    margin-bottom: 20px;
+}
+
+#goalForm .form-group label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: var(--negro);
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#goalForm .form-group input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 1px solid #ddd8ce;
+    border-radius: 12px;
+
+    background: var(--beige-claro);
+
+    color: var(--negro);
+
+    font-family: inherit;
+    font-size: 15px;
+
+    outline: none;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+#goalForm .form-group input:focus {
+    border-color: var(--verde-nido);
+
+    box-shadow:
+        0 0 0 3px rgba(110, 125, 91, 0.10);
+}
+
+#goalForm .amount-input {
+    position: relative;
+}
+
+#goalForm .amount-input input {
+    padding-right: 45px;
+}
+
+#goalForm .amount-input span {
+    position: absolute;
+
+    right: 15px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: var(--gris);
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#goalForm .primary-button {
+    width: 100%;
+    margin-top: 8px;
+}
+
+#goalForm .secondary-button {
+    width: 100%;
+    margin-top: 10px;
+}
+/* =====================================================
+   TARJETAS DE OBJETIVOS
+===================================================== */
+
+.goal-card {
+    background: var(--blanco);
+
+    border: 1px solid #e4dfd5;
+
+    border-radius: 18px;
+
+    padding: 20px;
+
+    margin-bottom: 16px;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.04);
+}
+
+.goal-card-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 15px;
+}
+
+.goal-card-header h3 {
+    margin: 0 0 6px;
+
+    color: var(--negro);
+
+    font-size: 17px;
+}
+
+.goal-card-header p {
+    margin: 0;
+
+    color: var(--gris);
+
+    font-size: 13px;
+}
+
+.goal-percentage {
+    color: var(--verde-nido);
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+.goal-progress {
+    width: 100%;
+
+    height: 9px;
+
+    margin-top: 18px;
+
+    background: #e9e5dc;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.goal-progress-bar {
+    height: 100%;
+
+    background: var(--verde-nido);
+
+    border-radius: 20px;
+
+    transition: width 0.4s ease;
+}
+
+.goal-card-footer {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-top: 10px;
+
+    color: var(--gris);
+
+    font-size: 12px;
+}
+/* =====================================================
+   AÑADIR DINERO — OBJETIVOS
+===================================================== */
+
+.goal-card-footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 12px;
+
+    color: var(--gris);
+
+    font-size: 12px;
+}
+
+.goal-add-money {
+    border: none;
+
+    background: var(--beige);
+
+    color: var(--verde-nido);
+
+    padding: 8px 12px;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.goal-add-money:hover {
+    background: var(--verde-nido);
+
+    color: var(--blanco);
+}
+
+/* =====================================================
+   OBJETIVO COMPLETADO
+===================================================== */
+
+.goal-completed {
+    border-color: var(--verde-nido);
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blanco),
+            #f5f7f0
+        );
+}
+
+.goal-completed-message {
+    margin-bottom: 16px;
+
+    padding: 10px 12px;
+
+    border-radius: 10px;
+
+    background: var(--beige);
+
+    color: var(--verde-nido);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.goal-completed .goal-progress-bar {
+    background: var(--verde-nido);
+}
+
+.goal-finished-text {
+    color: var(--verde-nido);
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+/* =====================================================
+   ELIMINAR OBJETIVO
+===================================================== */
+
+.goal-delete-button {
+    width: 100%;
+
+    margin-top: 16px;
+
+    padding: 10px 14px;
+
+    border: 1px solid #e2ddd4;
+
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: #777;
+
+    font-family: inherit;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.goal-delete-button:hover {
+    background: #f5f2ec;
+
+    color: #555;
+
+    border-color: #d5cec2;
+}
+
+/* =====================================================
+   PANTALLA MÁS
+===================================================== */
+
+.more-section {
+    margin-bottom: 28px;
+}
+
+.more-section h2 {
+    margin: 0 0 10px;
+
+    color: var(--gris);
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.08em;
+}
+
+
+/* =====================================================
+   OPCIONES
+===================================================== */
+
+.more-option {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px;
+
+    margin-bottom: 8px;
+
+    border: 1px solid #e4dfd5;
+
+    border-radius: 16px;
+
+    background: var(--blanco);
+
+    color: var(--negro);
+
+    font-family: inherit;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.more-option:hover {
+
+    transform: translateY(-1px);
+
+    background: var(--beige-claro);
+
+    border-color: #d8d1c5;
+}
+
+
+/* =====================================================
+   ICONO
+===================================================== */
+
+.more-option-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: var(--beige);
+
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   TEXTO
+===================================================== */
+
+.more-option-content {
+
+    flex: 1;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.more-option-content strong {
+
+    color: var(--negro);
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+.more-option-content span {
+
+    color: var(--gris);
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   FLECHA
+===================================================== */
+
+.more-option-arrow {
+
+    color: var(--gris);
+
+    font-size: 25px;
+
+    line-height: 1;
+}
+
+
+/* =====================================================
+   CERRAR SESIÓN
+===================================================== */
+
+.logout-section {
+
+    margin-top: 8px;
+
+    padding-bottom: 100px;
+}
+
+
+.logout-button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #e1dbd1;
+
+    border-radius: 14px;
+
+    background: transparent;
+
+    color: #777;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+
+.logout-button:hover {
+
+    background: var(--beige);
+
+    color: var(--negro);
+
+    border-color: #d5cec2;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .more-option {
+
+        padding: 14px;
+
+    }
+
+
+    .more-option-icon {
+
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 18px;
+
+    }
+
+}
+/* =====================================================
+   MIS NIDOS
+===================================================== */
+
+.my-nidos-intro {
+    margin-bottom: 24px;
+}
+
+.my-nidos-intro h2 {
+    margin: 0 0 7px;
+    color: var(--negro);
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.my-nidos-intro p {
+    margin: 0;
+    color: var(--gris);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   LISTA
+===================================================== */
+
+.my-nidos-section {
+    width: 100%;
+    margin-bottom: 26px;
+}
+
+
+/* =====================================================
+   TARJETA NIDO
+===================================================== */
+
+.my-nido-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 14px;
+
+    background: var(--blanco);
+
+    border: 1px solid #e4dfd5;
+    border-radius: 18px;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.my-nido-card:hover {
+    transform: translateY(-2px);
+
+    border-color: #d5cfbf;
+
+    box-shadow:
+        0 9px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =====================================================
+   NIDO ACTIVO
+===================================================== */
+
+.my-nido-active {
+    border-color: var(--verde-nido);
+
+    box-shadow:
+        0 6px 22px rgba(110, 125, 91, 0.12);
+}
+
+
+/* =====================================================
+   ICONO
+===================================================== */
+
+.my-nido-icon {
+    flex-shrink: 0;
+
+    width: 54px;
+    height: 54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: var(--beige);
+
+    font-size: 25px;
+}
+
+
+/* =====================================================
+   INFORMACIÓN
+===================================================== */
+
+.my-nido-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.my-nido-info h3 {
+    margin: 0 0 5px;
+
+    color: var(--negro);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.my-nido-info p {
+    margin: 0;
+
+    color: var(--gris);
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   NIDO ACTUAL
+===================================================== */
+
+.my-nido-current {
+    display: inline-block;
+
+    margin-top: 7px;
+    padding: 4px 8px;
+
+    border-radius: 7px;
+
+    background: rgba(110, 125, 91, 0.10);
+
+    color: var(--verde-nido);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+
+/* =====================================================
+   BOTÓN ENTRAR
+===================================================== */
+
+.my-nido-enter {
+    flex-shrink: 0;
+
+    padding: 9px 13px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: var(--beige);
+
+    color: var(--verde-nido);
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.my-nido-enter:hover {
+    background: var(--verde-nido);
+
+    color: var(--blanco);
+}
+
+
+/* =====================================================
+   ACCIONES
+===================================================== */
+
+.my-nidos-actions {
+    width: 100%;
+    margin-top: 4px;
+}
+
+.my-nidos-actions .primary-button,
+.my-nidos-actions .secondary-button {
+    width: 100%;
+}
+
+.my-nidos-actions .secondary-button {
+    margin-top: 10px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .my-nido-card {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .my-nido-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 13px;
+        font-size: 22px;
+    }
+
+    .my-nido-info h3 {
+        font-size: 15px;
+    }
+
+    .my-nido-enter {
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+}
+
+/* =====================================================
+   PARTICIPANTES
+===================================================== */
+
+.participants-nido-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 20px;
+
+    background: var(--blanco);
+
+    border: 1px solid rgba(110, 125, 91, 0.15);
+
+    border-radius: 18px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.participants-nido-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: var(--beige);
+
+    font-size: 28px;
+
+}
+
+
+.participants-nido-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.participants-nido-info h3 {
+
+    margin: 0;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: var(--negro);
+
+}
+
+
+.participants-nido-info p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    color: var(--gris);
+
+}
+
+
+/* =====================================================
+   TARJETA DE PARTICIPANTE
+===================================================== */
+
+.participant-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px 18px;
+
+    margin-bottom: 10px;
+
+    background: var(--blanco);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+
+    border-radius: 16px;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+
+}
+
+
+.participant-avatar {
+
+    width: 46px;
+
+    height: 46px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--verde-nido);
+
+    color: var(--blanco);
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+}
+
+
+.participant-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+}
+
+
+.participant-info strong {
+
+    font-size: 15px;
+
+    color: var(--negro);
+
+}
+
+
+.participant-info span {
+
+    font-size: 13px;
+
+    color: var(--gris);
+
+}
+
+
+/* =====================================================
+   INVITAR A ALGUIEN
+===================================================== */
+
+.invite-card {
+
+    padding: 22px;
+
+    background: var(--blanco);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+
+    border-radius: 18px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.invite-card p {
+
+    margin-top: 0;
+
+    margin-bottom: 18px;
+
+    color: var(--gris);
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+}
+
+
+.invite-code {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 16px;
+
+    margin-bottom: 16px;
+
+    background: var(--beige);
+
+    border-radius: 12px;
+
+    color: var(--verde-nido);
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.copy-message {
+
+    min-height: 20px;
+
+    margin: 12px 0 0;
+
+    text-align: center;
+
+    color: var(--verde-nido);
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+/* =====================================================
+   PARTICIPANTES — MÓVIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .participants-nido-card {
+
+        padding: 16px;
+
+    }
+
+
+    .participants-nido-icon {
+
+        width: 50px;
+
+        height: 50px;
+
+        font-size: 24px;
+
+    }
+
+
+    .participant-card {
+
+        padding: 14px 16px;
+
+    }
+
+
+    .invite-card {
+
+        padding: 18px;
+
+    }
+
+
+    .invite-code {
+
+        font-size: 19px;
+
+        letter-spacing: 1.5px;
+
+    }
+
+}
+/* =====================================================
+   MI PERFIL
+===================================================== */
+
+.profile-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 24px;
+
+    margin-bottom: 28px;
+
+    background: var(--blanco);
+
+    border: 1px solid rgba(110, 125, 91, 0.14);
+
+    border-radius: 22px;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.profile-avatar {
+
+    width: 72px;
+
+    height: 72px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--verde-nido);
+
+    color: var(--blanco);
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    box-shadow: 0 5px 14px rgba(110, 125, 91, 0.25);
+
+}
+
+
+.profile-main-info {
+
+    min-width: 0;
+
+}
+
+
+.profile-main-info h2 {
+
+    margin: 0 0 6px;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    color: var(--negro);
+
+}
+
+
+.profile-main-info p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    color: var(--gris);
+
+    word-break: break-word;
+
+}
+
+
+/* =====================================================
+   SECCIONES
+===================================================== */
+
+.profile-section {
+
+    margin-bottom: 26px;
+
+}
+
+
+.profile-section h3 {
+
+    margin: 0 0 12px;
+
+    padding-left: 4px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: var(--verde-nido);
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* =====================================================
+   INFORMACIÓN
+===================================================== */
+
+.profile-info-card {
+
+    overflow: hidden;
+
+    background: var(--blanco);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+
+}
+
+
+.profile-info-row {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 17px 20px;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+}
+
+
+.profile-info-row:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.profile-info-row > div {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+}
+
+
+.profile-label {
+
+    font-size: 12px;
+
+    color: var(--gris);
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.4px;
+
+}
+
+
+.profile-info-row strong {
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    color: var(--negro);
+
+    word-break: break-word;
+
+}
+
+
+/* =====================================================
+   BOTÓN VOLVER
+===================================================== */
+
+.profile-back-button {
+
+    width: 100%;
+
+    margin-top: 4px;
+
+}
+
+
+/* =====================================================
+   MÓVIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .profile-card {
+
+        padding: 20px;
+
+        gap: 15px;
+
+    }
+
+
+    .profile-avatar {
+
+        width: 60px;
+
+        height: 60px;
+
+        font-size: 24px;
+
+    }
+
+
+    .profile-main-info h2 {
+
+        font-size: 19px;
+
+    }
+
+
+    .profile-info-row {
+
+        padding: 15px 16px;
+
+    }
+
+}
+/* =====================================================
+   BOTÓN EDITAR PERFIL
+===================================================== */
+
+.profile-edit-button {
+
+    margin-left: auto;
+
+    flex-shrink: 0;
+
+    padding: 9px 16px;
+
+    border: 1px solid rgba(110, 125, 91, 0.35);
+
+    border-radius: 10px;
+
+    background: var(--beige-claro);
+
+    color: var(--verde-nido);
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.profile-edit-button:hover {
+
+    background: var(--verde-nido);
+
+    color: var(--blanco);
+
+    transform: translateY(-1px);
+
+}
+
+
+.profile-edit-button:active {
+
+    transform: translateY(0);
+
+}
+
+
+/* =====================================================
+   BOTÓN EDITAR — MÓVIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .profile-edit-button {
+
+        padding: 8px 13px;
+
+        font-size: 12px;
+
+    }
+
+}
+/* =====================================================
+   CONFIGURACIÓN DEL NIDO
+===================================================== */
+
+.nido-settings-section {
+
+    margin-bottom: 28px;
+
+}
+
+
+.nido-settings-section h2 {
+
+    margin: 0 0 12px;
+
+    padding-left: 4px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: var(--verde-nido);
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+}
+
+
+/* =====================================================
+   TARJETA DEL NIDO ACTUAL
+===================================================== */
+
+.nido-settings-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 20px;
+
+    background: var(--blanco);
+
+    border: 1px solid rgba(110, 125, 91, 0.14);
+
+    border-radius: 20px;
+
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.05);
+
+}
+
+
+.nido-settings-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: var(--beige);
+
+    font-size: 28px;
+
+}
+
+
+.nido-settings-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    min-width: 0;
+
+}
+
+
+.nido-settings-label {
+
+    font-size: 11px;
+
+    color: var(--gris);
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.6px;
+
+}
+
+
+.nido-settings-info strong {
+
+    font-size: 19px;
+
+    color: var(--negro);
+
+}
+
+
+.nido-settings-info span:last-child {
+
+    font-size: 13px;
+
+    color: var(--gris);
+
+}
+
+
+/* =====================================================
+   OPCIONES
+===================================================== */
+
+.nido-settings-options {
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background: var(--blanco);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+
+}
+
+
+.nido-settings-option {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 17px 18px;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+    background: var(--blanco);
+
+    font-family: inherit;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+
+}
+
+
+.nido-settings-option:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.nido-settings-option:hover {
+
+    background: var(--beige-claro);
+
+}
+
+
+.nido-settings-option-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: var(--beige);
+
+    font-size: 19px;
+
+}
+
+
+.nido-settings-option-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    flex: 1;
+
+    min-width: 0;
+
+}
+
+
+.nido-settings-option-text strong {
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: var(--negro);
+
+}
+
+
+.nido-settings-option-text small {
+
+    font-size: 12px;
+
+    color: var(--gris);
+
+}
+
+
+.nido-settings-arrow {
+
+    flex-shrink: 0;
+
+    color: var(--verde-nido);
+
+    font-size: 20px;
+
+    font-weight: 500;
+
+}
+
+
+/* =====================================================
+   ZONA DE PELIGRO
+===================================================== */
+
+.nido-settings-danger-card {
+
+    display: flex;
+
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background: var(--blanco);
+
+    border: 1px solid rgba(180, 70, 70, 0.15);
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+
+}
+
+
+.nido-settings-danger-option {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 17px 18px;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(180, 70, 70, 0.10);
+
+    background: var(--blanco);
+
+    font-family: inherit;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+
+}
+
+
+.nido-settings-danger-option:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.nido-settings-danger-option:hover {
+
+    background: #fff7f7;
+
+}
+
+
+.nido-settings-danger-option .nido-settings-option-icon {
+
+    background: #fff1f1;
+
+}
+
+
+.nido-settings-danger-option .nido-settings-option-text strong {
+
+    color: #a94b4b;
+
+}
+
+
+.nido-settings-danger-option .nido-settings-arrow {
+
+    color: #a94b4b;
+
+}
+
+
+/* =====================================================
+   MÓVIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .nido-settings-card {
+
+        padding: 17px;
+
+    }
+
+
+    .nido-settings-icon {
+
+        width: 52px;
+
+        height: 52px;
+
+        font-size: 24px;
+
+    }
+
+
+    .nido-settings-option {
+
+        padding: 15px;
+
+    }
+
+
+    .nido-settings-option-icon {
+
+        width: 38px;
+
+        height: 38px;
+
+        font-size: 17px;
+
+    }
+
+
+    .nido-settings-option-text small {
+
+        font-size: 11px;
+
+    }
+
+}
+css id="r0a9u4"
+/* =====================================================
+   MODAL — SALIR DEL NIDO
+===================================================== */
+
+.nido-settings-modal {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(34, 34, 34, 0.45);
+
+    backdrop-filter: blur(4px);
+
+}
+
+
+.nido-settings-modal[hidden] {
+
+    display: none;
+
+}
+
+
+.nido-settings-modal-card {
+
+    width: 100%;
+
+    max-width: 420px;
+
+    padding: 30px 26px;
+
+    background: var(--blanco);
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.18);
+
+    text-align: center;
+
+    animation:
+        nidoModalAppear 0.2s ease;
+
+}
+
+
+.nido-settings-modal-icon {
+
+    width: 58px;
+
+    height: 58px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: #fff1f1;
+
+    font-size: 26px;
+
+}
+
+
+.nido-settings-modal-card h3 {
+
+    margin: 0 0 10px;
+
+    font-size: 20px;
+
+    color: var(--negro);
+
+}
+
+
+.nido-settings-modal-card p {
+
+    margin: 0 auto;
+
+    max-width: 320px;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: var(--gris);
+
+}
+
+
+.nido-settings-modal-actions {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 26px;
+
+}
+
+
+.nido-settings-modal-actions button {
+
+    flex: 1;
+
+}
+
+
+.nido-settings-confirm-danger {
+
+    min-height: 44px;
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #a94b4b;
+
+    color: var(--blanco);
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.15s ease;
+
+}
+
+
+.nido-settings-confirm-danger:hover {
+
+    background: #913f3f;
+
+}
+
+
+.nido-settings-confirm-danger:active {
+
+    transform: scale(0.98);
+
+}
+
+
+@keyframes nidoModalAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(8px) scale(0.98);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+
+    }
+
+}
+
+
+/* =====================================================
+   MÓVIL
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .nido-settings-modal {
+
+        padding: 16px;
+
+    }
+
+
+    .nido-settings-modal-card {
+
+        padding: 26px 20px;
+
+        border-radius: 20px;
+
+    }
+
+
+    .nido-settings-modal-actions {
+
+        flex-direction: column-reverse;
+
+    }
+
+
+}
+
+/* =====================================================
+   NOTIFICACIONES
+===================================================== */
+
+.notifications-intro {
+    margin-bottom: 28px;
+}
+
+.notifications-intro h2 {
+    margin: 0 0 7px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.notifications-intro p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   SECCIONES
+===================================================== */
+
+.notifications-section {
+    margin-bottom: 28px;
+}
+
+.notifications-section h2 {
+    margin: 0 0 12px;
+    padding-left: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--verde-nido);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   OPCIONES
+===================================================== */
+
+.notifications-options {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--blanco);
+    border: 1px solid rgba(110, 125, 91, 0.12);
+    border-radius: 18px;
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.04);
+}
+
+
+.notification-option {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 17px 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+
+.notification-option:last-child {
+    border-bottom: none;
+}
+
+
+/* =====================================================
+   ICONOS
+===================================================== */
+
+.notification-option-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+    background: var(--beige);
+
+    font-size: 19px;
+}
+
+
+/* =====================================================
+   TEXTO
+===================================================== */
+
+.notification-option-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    flex: 1;
+    min-width: 0;
+}
+
+
+.notification-option-text strong {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--negro);
+}
+
+
+.notification-option-text small {
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   INTERRUPTOR
+===================================================== */
+
+.notification-switch {
+    position: relative;
+
+    width: 46px;
+    height: 26px;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+}
+
+
+.notification-switch input {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    opacity: 0;
+}
+
+
+.notification-slider {
+    position: absolute;
+    inset: 0;
+
+    border-radius: 999px;
+
+    background: #d8d8d8;
+
+    transition:
+        background 0.2s ease;
+}
+
+
+.notification-slider::before {
+    content: "";
+
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    left: 3px;
+    top: 3px;
+
+    border-radius: 50%;
+
+    background: var(--blanco);
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.notification-switch input:checked
++ .notification-slider {
+    background: var(--verde-nido);
+}
+
+
+.notification-switch input:checked
++ .notification-slider::before {
+    transform: translateX(20px);
+}
+
+
+/* =====================================================
+   TARJETA DE INFORMACIÓN
+===================================================== */
+
+.notifications-info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    margin-bottom: 28px;
+    padding: 18px;
+
+    background: var(--beige-claro);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+    border-radius: 18px;
+}
+
+
+.notifications-info-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+    background: var(--beige);
+
+    font-size: 19px;
+}
+
+
+.notifications-info-card strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--negro);
+}
+
+
+.notifications-info-card p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .notification-option {
+        padding: 15px;
+    }
+
+
+    .notification-option-icon {
+        width: 38px;
+        height: 38px;
+
+        font-size: 17px;
+    }
+
+
+    .notification-option-text small {
+        font-size: 11px;
+    }
+
+
+    .notification-switch {
+        width: 44px;
+        height: 25px;
+    }
+
+
+    .notification-slider::before {
+        width: 19px;
+        height: 19px;
+    }
+
+
+    .notification-switch input:checked
+    + .notification-slider::before {
+        transform: translateX(19px);
+    }
+
+
+    .notifications-info-card {
+        padding: 16px;
+    }
+
+}
+
+/* =====================================================
+   SEGURIDAD
+===================================================== */
+
+.security-intro {
+    margin-bottom: 28px;
+}
+
+.security-intro h2 {
+    margin: 0 0 7px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.security-intro p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   SECCIONES
+===================================================== */
+
+.security-section {
+    margin-bottom: 28px;
+}
+
+.security-section h2 {
+    margin: 0 0 12px;
+    padding-left: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--verde-nido);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   OPCIONES
+===================================================== */
+
+.security-options {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: var(--blanco);
+    border: 1px solid rgba(110, 125, 91, 0.12);
+    border-radius: 18px;
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.04);
+}
+
+
+.security-option {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 17px 18px;
+
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+    background: var(--blanco);
+
+    font-family: inherit;
+    text-align: left;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease;
+}
+
+
+.security-option:last-child {
+    border-bottom: none;
+}
+
+
+.security-option:hover {
+    background: var(--beige-claro);
+}
+
+
+/* =====================================================
+   ICONOS
+===================================================== */
+
+.security-option-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: var(--beige);
+
+    font-size: 19px;
+}
+
+
+/* =====================================================
+   TEXTO
+===================================================== */
+
+.security-option-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    flex: 1;
+    min-width: 0;
+}
+
+
+.security-option-text strong {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--negro);
+}
+
+
+.security-option-text small {
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   FLECHA
+===================================================== */
+
+.security-option-arrow {
+    flex-shrink: 0;
+
+    color: var(--verde-nido);
+
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* =====================================================
+   ESTADO DE SEGURIDAD
+===================================================== */
+
+.security-status-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    margin-bottom: 28px;
+    padding: 18px;
+
+    background: var(--beige-claro);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+    border-radius: 18px;
+}
+
+
+.security-status-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: var(--beige);
+
+    font-size: 19px;
+}
+
+
+.security-status-card strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: var(--negro);
+}
+
+
+.security-status-card p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .security-option {
+        padding: 15px;
+    }
+
+
+    .security-option-icon {
+        width: 38px;
+        height: 38px;
+
+        font-size: 17px;
+    }
+
+
+    .security-option-text small {
+        font-size: 11px;
+    }
+
+
+    .security-status-card {
+        padding: 16px;
+    }
+
+}
+
+/* =====================================================
+   CAMBIAR CONTRASEÑA
+===================================================== */
+
+.change-password-intro {
+    margin-bottom: 24px;
+}
+
+.change-password-intro h2 {
+    margin: 0 0 7px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.change-password-intro p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   TARJETA DEL FORMULARIO
+===================================================== */
+
+.change-password-card {
+    padding: 22px;
+
+    background: var(--blanco);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+    border-radius: 20px;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =====================================================
+   CAMPOS
+===================================================== */
+
+.change-password-group {
+    margin-bottom: 20px;
+}
+
+
+.change-password-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: var(--negro);
+}
+
+
+.password-input-wrapper {
+    position: relative;
+}
+
+
+.password-input-wrapper input {
+    width: 100%;
+
+    min-height: 46px;
+
+    padding: 11px 48px 11px 14px;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+
+    background: var(--blanco);
+
+    color: var(--negro);
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.password-input-wrapper input:focus {
+    border-color: var(--verde-nido);
+
+    box-shadow:
+        0 0 0 3px rgba(110, 125, 91, 0.10);
+}
+
+
+.password-toggle {
+    position: absolute;
+
+    top: 50%;
+    right: 10px;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform: translateY(-50%);
+
+    border: none;
+    border-radius: 9px;
+
+    background: transparent;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    opacity: 0.65;
+
+    transition:
+        background 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.password-toggle:hover {
+    background: var(--beige);
+    opacity: 1;
+}
+
+
+.change-password-help {
+    display: block;
+
+    margin-top: 6px;
+
+    font-size: 11px;
+    line-height: 1.4;
+
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   MENSAJE
+===================================================== */
+
+.change-password-message {
+    margin-bottom: 18px;
+    padding: 12px 14px;
+
+    border-radius: 12px;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+.change-password-message.success {
+    background: #eef5eb;
+
+    border: 1px solid rgba(110, 125, 91, 0.18);
+
+    color: #526441;
+}
+
+
+.change-password-message.error {
+    background: #fff1f1;
+
+    border: 1px solid rgba(180, 70, 70, 0.15);
+
+    color: #a94b4b;
+}
+
+
+/* =====================================================
+   BOTONES
+===================================================== */
+
+.change-password-actions {
+    display: flex;
+    gap: 10px;
+
+    margin-top: 26px;
+}
+
+
+.change-password-actions button {
+    flex: 1;
+}
+
+
+/* =====================================================
+   INFORMACIÓN
+===================================================== */
+
+.change-password-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    margin-top: 22px;
+    padding: 18px;
+
+    background: var(--beige-claro);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+    border-radius: 18px;
+}
+
+
+.change-password-info-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: var(--beige);
+
+    font-size: 19px;
+}
+
+
+.change-password-info strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: var(--negro);
+}
+
+
+.change-password-info p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .change-password-card {
+        padding: 18px;
+    }
+
+
+    .change-password-actions {
+        flex-direction: column;
+    }
+
+
+    .change-password-info {
+        padding: 16px;
+    }
+
+}
+
+/* =====================================================
+   SESIONES ACTIVAS
+===================================================== */
+
+.sessions-intro {
+    margin-bottom: 24px;
+}
+
+.sessions-intro h2 {
+    margin: 0 0 7px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.sessions-intro p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   SECCIÓN
+===================================================== */
+
+.sessions-section {
+    margin-bottom: 28px;
+}
+
+.sessions-section h2 {
+    margin: 0 0 12px;
+    padding-left: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--verde-nido);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   TARJETA DE SESIÓN
+===================================================== */
+
+.session-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 20px;
+
+    background: var(--blanco);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+    border-radius: 20px;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.session-icon {
+    width: 54px;
+    height: 54px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 15px;
+
+    background: var(--beige);
+
+    font-size: 25px;
+}
+
+
+.session-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    min-width: 0;
+}
+
+
+.session-title-row {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    flex-wrap: wrap;
+}
+
+
+.session-title-row strong {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--negro);
+}
+
+
+.session-active {
+    display: inline-flex;
+    align-items: center;
+
+    padding: 4px 8px;
+
+    border-radius: 999px;
+
+    background: #eef5eb;
+
+    color: #526441;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+
+.session-info > span:not(.session-active) {
+    font-size: 12px;
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   TARJETA DE SEGURIDAD
+===================================================== */
+
+.sessions-security-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    margin-bottom: 20px;
+    padding: 18px;
+
+    background: var(--beige-claro);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+    border-radius: 18px;
+}
+
+
+.sessions-security-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: var(--beige);
+
+    font-size: 19px;
+}
+
+
+.sessions-security-card strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: var(--negro);
+}
+
+
+.sessions-security-card p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   TARJETA DE INFORMACIÓN
+===================================================== */
+
+.sessions-info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    margin-bottom: 28px;
+    padding: 18px;
+
+    background: var(--blanco);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+    border-radius: 18px;
+}
+
+
+.sessions-info-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: var(--beige);
+
+    font-size: 18px;
+}
+
+
+.sessions-info-card strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: var(--negro);
+}
+
+
+.sessions-info-card p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .session-card {
+        padding: 17px;
+    }
+
+
+    .session-icon {
+        width: 50px;
+        height: 50px;
+
+        font-size: 23px;
+    }
+
+
+    .sessions-security-card,
+    .sessions-info-card {
+        padding: 16px;
+    }
+
+}
+/* =====================================================
+   TUS DATOS Y PRIVACIDAD
+===================================================== */
+
+.data-privacy-intro {
+    margin-bottom: 28px;
+}
+
+.data-privacy-intro h2 {
+    margin: 0 0 7px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--negro);
+}
+
+.data-privacy-intro p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   SECCIONES
+===================================================== */
+
+.data-privacy-section {
+    margin-bottom: 24px;
+}
+
+.data-privacy-section h2 {
+    margin: 0 0 12px;
+    padding-left: 4px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--verde-nido);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* =====================================================
+   TARJETAS
+===================================================== */
+
+.data-privacy-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    padding: 20px;
+
+    background: var(--blanco);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+    border-radius: 20px;
+
+    box-shadow:
+        0 7px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.data-privacy-icon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: var(--beige);
+
+    font-size: 21px;
+}
+
+
+.data-privacy-content {
+    flex: 1;
+    min-width: 0;
+}
+
+
+.data-privacy-content > strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    color: var(--negro);
+}
+
+
+.data-privacy-content > p {
+    margin: 0 0 15px;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   DATOS PERSONALES
+===================================================== */
+
+.data-privacy-values {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding-top: 13px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+
+.data-privacy-values div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+
+.data-privacy-values span {
+    font-size: 12px;
+    color: var(--gris);
+}
+
+
+.data-privacy-values strong {
+    max-width: 60%;
+
+    overflow: hidden;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: var(--negro);
+    text-align: right;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   RESUMEN
+===================================================== */
+
+.data-privacy-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 13px;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+
+.data-privacy-summary span {
+    font-size: 12px;
+    color: var(--gris);
+}
+
+
+.data-privacy-summary strong {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--verde-nido);
+}
+
+
+/* =====================================================
+   SEGURIDAD
+===================================================== */
+
+.data-privacy-security {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    margin-bottom: 20px;
+    padding: 18px;
+
+    background: var(--beige-claro);
+
+    border: 1px solid rgba(110, 125, 91, 0.12);
+    border-radius: 18px;
+}
+
+
+.data-privacy-security-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: var(--beige);
+
+    font-size: 19px;
+}
+
+
+.data-privacy-security strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: var(--negro);
+}
+
+
+.data-privacy-security p {
+    margin: 0 0 8px;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--gris);
+}
+
+
+.data-privacy-security p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   ZONA DE ELIMINACIÓN
+===================================================== */
+
+.data-privacy-danger {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+
+    margin-bottom: 28px;
+    padding: 18px;
+
+    background: #fff8f8;
+
+    border: 1px solid rgba(180, 70, 70, 0.14);
+    border-radius: 18px;
+}
+
+
+.data-privacy-danger-icon {
+    width: 42px;
+    height: 42px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #fff1f1;
+
+    font-size: 19px;
+}
+
+
+.data-privacy-danger-content {
+    flex: 1;
+}
+
+
+.data-privacy-danger-content strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #a94b4b;
+}
+
+
+.data-privacy-danger-content p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--gris);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .data-privacy-card {
+        padding: 17px;
+        gap: 13px;
+    }
+
+
+    .data-privacy-icon {
+        width: 44px;
+        height: 44px;
+
+        font-size: 19px;
+    }
+
+
+    .data-privacy-values div {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+
+    .data-privacy-values strong {
+        max-width: 100%;
+
+        text-align: left;
+    }
+
+
+    .data-privacy-security,
+    .data-privacy-danger {
+        padding: 16px;
+    }
+
+}
+
+/* =====================================================
+   BOTÓN ELIMINAR OBJETIVO
+===================================================== */
+
+.goal-delete {
+    display: block;
+
+    margin-top: 10px;
+    margin-left: auto;
+
+    padding: 7px 10px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #a94b4b;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.2s ease,
+        color 0.2s ease;
+}
+
+
+.goal-delete:hover {
+    color: #8f3d3d;
+
+    opacity: 0.75;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="Sesiones activas de la cuenta NIDO"
+>
+
+<title>Sesiones activas — NIDO</title>
+
+<link
+    rel="stylesheet"
+    href="css/style.css"
+>
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+<!-- =====================================================
+     CABECERA
+====================================================== -->
+
+<header class="dashboard-header">
+
+    <div>
+
+        <p class="dashboard-welcome">
+            NIDO
+        </p>
+
+        <h1>
+            Sesiones activas
+        </h1>
+
+    </div>
+
+
+    <div class="dashboard-logo">
+        NIDO
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     CONTENIDO
+====================================================== -->
+
+<main class="dashboard-content">
+
+
+    <!-- =================================================
+         INTRODUCCIÓN
+    ================================================== -->
+
+    <section class="sessions-intro">
+
+        <h2>
+            Dónde tienes abierta tu cuenta
+        </h2>
+
+        <p>
+            Consulta las sesiones activas de tu cuenta NIDO.
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         SESIÓN ACTUAL
+    ================================================== -->
+
+    <section class="sessions-section">
+
+        <h2>
+            Sesión actual
+        </h2>
+
+
+        <div class="session-card">
+
+
+            <div class="session-icon">
+                💻
+            </div>
+
+
+            <div class="session-info">
+
+                <div class="session-title-row">
+
+                    <strong>
+                        Este dispositivo
+                    </strong>
+
+                    <span class="session-active">
+                        Activa
+                    </span>
+
+                </div>
+
+
+                <span id="sessionDevice">
+                    Navegador actual
+                </span>
+
+
+                <span id="sessionDate">
+                    Sesión iniciada ahora
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SEGURIDAD
+    ================================================== -->
+
+    <section class="sessions-security-card">
+
+        <div class="sessions-security-icon">
+            🛡️
+        </div>
+
+
+        <div>
+
+            <strong>
+                Protege tu cuenta
+            </strong>
+
+            <p>
+                Si detectas una sesión que no reconoces,
+                podrás cerrarla desde aquí cuando NIDO tenga
+                conectado el sistema real de cuentas.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         INFORMACIÓN
+    ================================================== -->
+
+    <section class="sessions-info-card">
+
+        <div class="sessions-info-icon">
+            ℹ️
+        </div>
+
+
+        <div>
+
+            <strong>
+                Gestión de dispositivos
+            </strong>
+
+            <p>
+                La gestión de varias sesiones y dispositivos
+                estará disponible cuando NIDO tenga conexión
+                con su sistema de cuentas.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         BOTÓN VOLVER
+    ================================================== -->
+
+    <button
+        type="button"
+        id="backSessionsButton"
+        class="secondary-button profile-back-button"
+    >
+        ← Volver
+    </button>
+
+
+</main>
+
+
+<!-- =====================================================
+     NAVEGACIÓN
+====================================================== -->
+
+<nav class="bottom-navigation">
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="dashboard"
+    >
+
+        <span class="nav-icon">
+            ⌂
+        </span>
+
+        <span>
+            Inicio
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="movements"
+    >
+
+        <span class="nav-icon">
+            ↕
+        </span>
+
+        <span>
+            Movimientos
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="goals"
+    >
+
+        <span class="nav-icon">
+            ◎
+        </span>
+
+        <span>
+            Objetivos
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item active"
+        type="button"
+        data-page="more"
+    >
+
+        <span class="nav-icon">
+            ☰
+        </span>
+
+        <span>
+            Más
+        </span>
+
+    </button>
+
+
+</nav>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="js/sessions.js"></script>
+
+
+</body>
+
+</html>

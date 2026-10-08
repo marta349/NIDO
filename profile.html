@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="Mi perfil — NIDO"
+>
+
+<title>Mi perfil — NIDO</title>
+
+<link
+    rel="stylesheet"
+    href="css/style.css"
+>
+
+
+</head>
+
+<body class="dashboard-page">
+
+
+<!-- =====================================================
+     CABECERA
+====================================================== -->
+
+<header class="dashboard-header">
+
+    <div>
+
+        <p class="dashboard-welcome">
+            Cuenta
+        </p>
+
+        <h1>
+            Mi perfil
+        </h1>
+
+    </div>
+
+
+    <div class="dashboard-logo">
+        NIDO
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     CONTENIDO
+====================================================== -->
+
+<main class="dashboard-content">
+
+
+    <!-- =================================================
+         PERFIL
+    ================================================== -->
+
+    <section class="profile-card">
+
+
+        <div class="profile-avatar">
+
+            <span id="profileInitial">
+                ?
+            </span>
+
+        </div>
+
+
+        <div class="profile-main-info">
+
+            <h2 id="profileName">
+                Usuario
+            </h2>
+
+            <p id="profileEmail">
+                usuario@email.com
+            </p>
+
+        </div>
+
+
+        <button
+            type="button"
+            id="editProfileButton"
+            class="profile-edit-button"
+        >
+            Editar
+        </button>
+
+
+    </section>
+
+
+    <!-- =================================================
+         FORMULARIO DE EDICIÓN
+    ================================================== -->
+
+    <section
+        id="editProfileSection"
+        class="profile-edit-section"
+        hidden
+    >
+
+        <div class="profile-edit-card">
+
+
+            <div class="profile-edit-header">
+
+                <div>
+
+                    <h2>
+                        Editar perfil
+                    </h2>
+
+                    <p>
+                        Actualiza tus datos personales.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form id="editProfileForm">
+
+
+                <div class="form-group">
+
+                    <label for="editProfileName">
+                        Nombre
+                    </label>
+
+                    <input
+                        type="text"
+                        id="editProfileName"
+                        autocomplete="name"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="editProfileEmail">
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="editProfileEmail"
+                        autocomplete="email"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="profile-edit-actions">
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        Guardar cambios
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="cancelEditProfile"
+                        class="secondary-button"
+                    >
+                        Cancelar
+                    </button>
+
+                </div>
+
+
+            </form>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         INFORMACIÓN DE LA CUENTA
+    ================================================== -->
+
+    <section class="profile-section">
+
+        <h3>
+            Información de la cuenta
+        </h3>
+
+
+        <div class="profile-info-card">
+
+
+            <div class="profile-info-row">
+
+                <div>
+
+                    <span class="profile-label">
+                        Nombre
+                    </span>
+
+                    <strong id="profileNameInfo">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-info-row">
+
+                <div>
+
+                    <span class="profile-label">
+                        Email
+                    </span>
+
+                    <strong id="profileEmailInfo">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         MI NIDO
+    ================================================== -->
+
+    <section class="profile-section">
+
+        <h3>
+            Mi NIDO
+        </h3>
+
+
+        <div class="profile-info-card">
+
+
+            <div class="profile-info-row">
+
+                <div>
+
+                    <span class="profile-label">
+                        Nombre del NIDO
+                    </span>
+
+                    <strong id="profileNidoName">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-info-row">
+
+                <div>
+
+                    <span class="profile-label">
+                        Tipo de NIDO
+                    </span>
+
+                    <strong id="profileNidoType">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="profile-info-row">
+
+                <div>
+
+                    <span class="profile-label">
+                        Código del NIDO
+                    </span>
+
+                    <strong id="profileNidoCode">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         BOTÓN VOLVER
+    ================================================== -->
+
+    <button
+        id="backProfileButton"
+        class="secondary-button profile-back-button"
+        type="button"
+    >
+        ← Volver
+    </button>
+
+
+</main>
+
+
+<!-- =====================================================
+     NAVEGACIÓN
+====================================================== -->
+
+<nav class="bottom-navigation">
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="dashboard"
+    >
+
+        <span class="nav-icon">
+            ⌂
+        </span>
+
+        <span>
+            Inicio
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="movements"
+    >
+
+        <span class="nav-icon">
+            ↕
+        </span>
+
+        <span>
+            Movimientos
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="goals"
+    >
+
+        <span class="nav-icon">
+            ◎
+        </span>
+
+        <span>
+            Objetivos
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item active"
+        type="button"
+        data-page="more"
+    >
+
+        <span class="nav-icon">
+            ☰
+        </span>
+
+        <span>
+            Más
+        </span>
+
+    </button>
+
+
+</nav>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="js/profile.js"></script>
+
+
+</body>
+
+</html>

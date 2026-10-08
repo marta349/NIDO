@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Añadir ingreso — NIDO"
+    >
+
+    <title>Añadir ingreso — NIDO</title>
+
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <main class="transaction-page">
+
+
+        <section class="transaction-card">
+
+
+            <!-- VOLVER -->
+
+            <button
+                id="backButton"
+                class="back-button"
+                type="button"
+            >
+                ← Volver
+            </button>
+
+
+            <!-- LOGO -->
+
+            <div class="auth-logo">
+                NIDO
+            </div>
+
+
+            <!-- ICONO -->
+
+            <div class="transaction-icon income-transaction-icon">
+                +
+            </div>
+
+
+            <!-- TÍTULO -->
+
+            <h1>
+                Añadir ingreso
+            </h1>
+
+
+            <p class="auth-description">
+
+                Registra un dinero que ha entrado en tu NIDO.
+
+            </p>
+
+
+            <!-- FORMULARIO -->
+
+            <form
+                id="incomeForm"
+            >
+
+
+                <!-- CONCEPTO -->
+
+                <div class="form-group">
+
+                    <label for="incomeConcept">
+                        Concepto
+                    </label>
+
+                    <input
+                        type="text"
+                        id="incomeConcept"
+                        placeholder="Ej. Nómina"
+                        maxlength="60"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CANTIDAD -->
+
+                <div class="form-group">
+
+                    <label for="incomeAmount">
+                        Cantidad
+                    </label>
+
+                    <div class="amount-input">
+
+                        <input
+                            type="number"
+                            id="incomeAmount"
+                            placeholder="0,00"
+                            min="0.01"
+                            step="0.01"
+                            required
+                        >
+
+                        <span>
+                            €
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CATEGORÍA -->
+
+                <div class="form-group">
+
+                    <label for="incomeCategory">
+                        Categoría
+                    </label>
+
+                    <select
+                        id="incomeCategory"
+                        required
+                    >
+
+                        <option
+                            value=""
+                            selected
+                            disabled
+                        >
+                            Selecciona una categoría
+                        </option>
+
+                        <option value="nomina">
+                            Nómina
+                        </option>
+
+                        <option value="trabajo">
+                            Trabajo
+                        </option>
+
+                        <option value="extra">
+                            Ingreso extra
+                        </option>
+
+                        <option value="otro">
+                            Otro
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- BOTÓN -->
+
+                <button
+                    type="submit"
+                    class="primary-button auth-button"
+                >
+                    AÑADIR INGRESO
+                </button>
+
+
+            </form>
+
+
+        </section>
+
+
+    </main>
+
+
+    <script src="js/nido-storage.js"></script>
+<script src="js/add-income.js"></script>
+
+
+</body>
+
+</html>

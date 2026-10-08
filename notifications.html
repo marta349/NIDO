@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="Preferencias de notificaciones de NIDO"
+>
+
+<title>Notificaciones — NIDO</title>
+
+<link
+    rel="stylesheet"
+    href="css/style.css"
+>
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+<!-- =====================================================
+     CABECERA
+====================================================== -->
+
+<header class="dashboard-header">
+
+    <div>
+
+        <p class="dashboard-welcome">
+            NIDO
+        </p>
+
+        <h1>
+            Notificaciones
+        </h1>
+
+    </div>
+
+
+    <div class="dashboard-logo">
+        NIDO
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     CONTENIDO
+====================================================== -->
+
+<main class="dashboard-content">
+
+
+    <!-- =================================================
+         INTRODUCCIÓN
+    ================================================== -->
+
+    <section class="notifications-intro">
+
+        <h2>
+            Mantente al día
+        </h2>
+
+        <p>
+            Elige qué avisos quieres recibir sobre tu NIDO.
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         NOTIFICACIONES DEL NIDO
+    ================================================== -->
+
+    <section class="notifications-section">
+
+        <h2>
+            Actividad del NIDO
+        </h2>
+
+
+        <div class="notifications-options">
+
+
+            <!-- NUEVOS MOVIMIENTOS -->
+
+            <div class="notification-option">
+
+                <div class="notification-option-icon">
+                    💰
+                </div>
+
+
+                <div class="notification-option-text">
+
+                    <strong>
+                        Nuevos movimientos
+                    </strong>
+
+                    <small>
+                        Recibe avisos cuando se registre un ingreso o gasto.
+                    </small>
+
+                </div>
+
+
+                <label class="notification-switch">
+
+                    <input
+                        type="checkbox"
+                        id="notificationsMovements"
+                    >
+
+                    <span class="notification-slider"></span>
+
+                </label>
+
+            </div>
+
+
+            <!-- OBJETIVOS -->
+
+            <div class="notification-option">
+
+                <div class="notification-option-icon">
+                    🎯
+                </div>
+
+
+                <div class="notification-option-text">
+
+                    <strong>
+                        Objetivos
+                    </strong>
+
+                    <small>
+                        Recibe avisos sobre el progreso de tus objetivos.
+                    </small>
+
+                </div>
+
+
+                <label class="notification-switch">
+
+                    <input
+                        type="checkbox"
+                        id="notificationsGoals"
+                    >
+
+                    <span class="notification-slider"></span>
+
+                </label>
+
+            </div>
+
+
+            <!-- PARTICIPANTES -->
+
+            <div class="notification-option">
+
+                <div class="notification-option-icon">
+                    👥
+                </div>
+
+
+                <div class="notification-option-text">
+
+                    <strong>
+                        Participantes
+                    </strong>
+
+                    <small>
+                        Recibe avisos cuando haya cambios entre los participantes.
+                    </small>
+
+                </div>
+
+
+                <label class="notification-switch">
+
+                    <input
+                        type="checkbox"
+                        id="notificationsParticipants"
+                    >
+
+                    <span class="notification-slider"></span>
+
+                </label>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         RESUMEN
+    ================================================== -->
+
+    <section class="notifications-section">
+
+        <h2>
+            Resumen
+        </h2>
+
+
+        <div class="notifications-options">
+
+
+            <div class="notification-option">
+
+                <div class="notification-option-icon">
+                    📊
+                </div>
+
+
+                <div class="notification-option-text">
+
+                    <strong>
+                        Resumen semanal
+                    </strong>
+
+                    <small>
+                        Recibe un resumen semanal de la actividad de tu NIDO.
+                    </small>
+
+                </div>
+
+
+                <label class="notification-switch">
+
+                    <input
+                        type="checkbox"
+                        id="notificationsWeekly"
+                    >
+
+                    <span class="notification-slider"></span>
+
+                </label>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         INFORMACIÓN
+    ================================================== -->
+
+    <section class="notifications-info-card">
+
+        <div class="notifications-info-icon">
+            🔔
+        </div>
+
+
+        <div>
+
+            <strong>
+                Sobre las notificaciones
+            </strong>
+
+            <p>
+                Estas preferencias controlan los avisos que recibirás
+                sobre la actividad de tus NIDOS.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         BOTÓN VOLVER
+    ================================================== -->
+
+    <button
+        type="button"
+        id="backNotificationsButton"
+        class="secondary-button profile-back-button"
+    >
+        ← Volver
+    </button>
+
+
+</main>
+
+
+<!-- =====================================================
+     NAVEGACIÓN
+====================================================== -->
+
+<nav class="bottom-navigation">
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="dashboard"
+    >
+
+        <span class="nav-icon">
+            ⌂
+        </span>
+
+        <span>
+            Inicio
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="movements"
+    >
+
+        <span class="nav-icon">
+            ↕
+        </span>
+
+        <span>
+            Movimientos
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="goals"
+    >
+
+        <span class="nav-icon">
+            ◎
+        </span>
+
+        <span>
+            Objetivos
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item active"
+        type="button"
+        data-page="more"
+    >
+
+        <span class="nav-icon">
+            ☰
+        </span>
+
+        <span>
+            Más
+        </span>
+
+    </button>
+
+
+</nav>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="js/notifications.js"></script>
+
+
+</body>
+
+</html>

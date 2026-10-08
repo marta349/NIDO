@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Mis NIDOS — NIDO"
+    >
+
+    <title>Mis NIDOS — NIDO</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =====================================================
+         CABECERA
+    ====================================================== -->
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="dashboard-welcome">
+                Bienvenida
+            </p>
+
+            <h1 id="myNidosUserName">
+                Mis NIDOS
+            </h1>
+
+        </div>
+
+
+        <div class="dashboard-logo">
+            NIDO
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         CONTENIDO
+    ====================================================== -->
+
+    <main class="dashboard-content">
+
+
+        <section class="my-nidos-intro">
+
+            <h2>
+                Tus NIDOS
+            </h2>
+
+            <p>
+                Elige el NIDO en el que quieres entrar.
+            </p>
+
+        </section>
+
+
+        <!-- =================================================
+             LISTA DE NIDOS
+        ================================================== -->
+
+        <section class="my-nidos-section">
+
+            <div id="myNidosList">
+
+                <!-- Los NIDOS aparecerán aquí -->
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             ACCIONES
+        ================================================== -->
+
+        <section class="my-nidos-actions">
+
+            <button
+                id="createNidoButton"
+                class="primary-button"
+                type="button"
+            >
+                + Crear un NIDO
+            </button>
+
+
+            <button
+                id="joinNidoButton"
+                class="secondary-button"
+                type="button"
+            >
+                🔑 Unirme a un NIDO
+            </button>
+
+        </section>
+
+
+        <!-- =================================================
+             VOLVER
+        ================================================== -->
+
+        <button
+            id="backMyNidosButton"
+            class="back-button"
+            type="button"
+        >
+            ← Volver
+        </button>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+ <script src="js/nido-storage.js"></script>
+<script src="js/my-nidos.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="Seguridad de la cuenta NIDO"
+>
+
+<title>Seguridad — NIDO</title>
+
+<link
+    rel="stylesheet"
+    href="css/style.css"
+>
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+<!-- =====================================================
+     CABECERA
+====================================================== -->
+
+<header class="dashboard-header">
+
+    <div>
+
+        <p class="dashboard-welcome">
+            NIDO
+        </p>
+
+        <h1>
+            Seguridad
+        </h1>
+
+    </div>
+
+
+    <div class="dashboard-logo">
+        NIDO
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     CONTENIDO
+====================================================== -->
+
+<main class="dashboard-content">
+
+
+    <!-- =================================================
+         INTRODUCCIÓN
+    ================================================== -->
+
+    <section class="security-intro">
+
+        <h2>
+            Protege tu cuenta
+        </h2>
+
+        <p>
+            Gestiona las opciones relacionadas con la seguridad
+            de tu cuenta y tus NIDOS.
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         CUENTA
+    ================================================== -->
+
+    <section class="security-section">
+
+        <h2>
+            Cuenta
+        </h2>
+
+
+        <div class="security-options">
+
+
+            <!-- CAMBIAR CONTRASEÑA -->
+
+            <button
+                type="button"
+                class="security-option"
+                id="changePasswordButton"
+            >
+
+                <span class="security-option-icon">
+                    🔑
+                </span>
+
+
+                <span class="security-option-text">
+
+                    <strong>
+                        Cambiar contraseña
+                    </strong>
+
+                    <small>
+                        Actualiza la contraseña de tu cuenta
+                    </small>
+
+                </span>
+
+
+                <span class="security-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+            <!-- SESIONES -->
+
+            <button
+                type="button"
+                class="security-option"
+                id="sessionsButton"
+            >
+
+                <span class="security-option-icon">
+                    📱
+                </span>
+
+
+                <span class="security-option-text">
+
+                    <strong>
+                        Sesiones activas
+                    </strong>
+
+                    <small>
+                        Consulta dónde está abierta tu cuenta
+                    </small>
+
+                </span>
+
+
+                <span class="security-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         PRIVACIDAD
+    ================================================== -->
+
+    <section class="security-section">
+
+        <h2>
+            Privacidad
+        </h2>
+
+
+        <div class="security-options">
+
+
+            <!-- DATOS -->
+
+            <button
+                type="button"
+                class="security-option"
+                id="dataButton"
+            >
+
+                <span class="security-option-icon">
+                    🛡️
+                </span>
+
+
+                <span class="security-option-text">
+
+                    <strong>
+                        Tus datos
+                    </strong>
+
+                    <small>
+                        Información sobre cómo se protegen tus datos
+                    </small>
+
+                </span>
+
+
+                <span class="security-option-arrow">
+                    →
+                </span>
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         ESTADO DE SEGURIDAD
+    ================================================== -->
+
+    <section class="security-status-card">
+
+        <div class="security-status-icon">
+            🛡️
+        </div>
+
+
+        <div>
+
+            <strong>
+                Tu cuenta está protegida
+            </strong>
+
+            <p>
+                Algunas funciones de seguridad estarán disponibles
+                cuando NIDO tenga el sistema de cuentas conectado.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         BOTÓN VOLVER
+    ================================================== -->
+
+    <button
+        type="button"
+        id="backSecurityButton"
+        class="secondary-button profile-back-button"
+    >
+        ← Volver
+    </button>
+
+
+</main>
+
+
+<!-- =====================================================
+     NAVEGACIÓN
+====================================================== -->
+
+<nav class="bottom-navigation">
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="dashboard"
+    >
+
+        <span class="nav-icon">
+            ⌂
+        </span>
+
+        <span>
+            Inicio
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="movements"
+    >
+
+        <span class="nav-icon">
+            ↕
+        </span>
+
+        <span>
+            Movimientos
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="goals"
+    >
+
+        <span class="nav-icon">
+            ◎
+        </span>
+
+        <span>
+            Objetivos
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item active"
+        type="button"
+        data-page="more"
+    >
+
+        <span class="nav-icon">
+            ☰
+        </span>
+
+        <span>
+            Más
+        </span>
+
+    </button>
+
+
+</nav>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="js/security.js"></script>
+
+
+</body>
+
+</html>

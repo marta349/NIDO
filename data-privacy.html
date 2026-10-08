@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+    name="description"
+    content="Datos y privacidad de la cuenta NIDO"
+>
+
+<title>Tus datos — NIDO</title>
+
+<link
+    rel="stylesheet"
+    href="css/style.css"
+>
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+<!-- =====================================================
+     CABECERA
+====================================================== -->
+
+<header class="dashboard-header">
+
+    <div>
+
+        <p class="dashboard-welcome">
+            NIDO
+        </p>
+
+        <h1>
+            Tus datos
+        </h1>
+
+    </div>
+
+
+    <div class="dashboard-logo">
+        NIDO
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     CONTENIDO
+====================================================== -->
+
+<main class="dashboard-content">
+
+
+    <!-- =================================================
+         INTRODUCCIÓN
+    ================================================== -->
+
+    <section class="data-privacy-intro">
+
+        <h2>
+            Tu información en NIDO
+        </h2>
+
+        <p>
+            Aquí puedes consultar qué tipo de información
+            utiliza NIDO para que puedas gestionar tus cuentas
+            y tus NIDOS.
+        </p>
+
+    </section>
+
+
+    <!-- =================================================
+         CUENTA
+    ================================================== -->
+
+    <section class="data-privacy-section">
+
+        <h2>
+            Tu cuenta
+        </h2>
+
+
+        <div class="data-privacy-card">
+
+
+            <div class="data-privacy-icon">
+                👤
+            </div>
+
+
+            <div class="data-privacy-content">
+
+                <strong>
+                    Información personal
+                </strong>
+
+
+                <p>
+                    NIDO puede utilizar tu nombre y correo
+                    electrónico para identificar tu cuenta.
+                </p>
+
+
+                <div class="data-privacy-values">
+
+                    <div>
+
+                        <span>
+                            Nombre
+                        </span>
+
+                        <strong id="dataUserName">
+                            —
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Correo electrónico
+                        </span>
+
+                        <strong id="dataUserEmail">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         NIDOS
+    ================================================== -->
+
+    <section class="data-privacy-section">
+
+        <h2>
+            Tus NIDOS
+        </h2>
+
+
+        <div class="data-privacy-card">
+
+
+            <div class="data-privacy-icon">
+                🏠
+            </div>
+
+
+            <div class="data-privacy-content">
+
+                <strong>
+                    Espacios compartidos
+                </strong>
+
+
+                <p>
+                    Cada NIDO contiene la información económica
+                    correspondiente a ese espacio.
+                </p>
+
+
+                <div class="data-privacy-summary">
+
+                    <span>
+                        NIDOS en tu cuenta
+                    </span>
+
+
+                    <strong id="dataNidosCount">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         INFORMACIÓN FINANCIERA
+    ================================================== -->
+
+    <section class="data-privacy-section">
+
+        <h2>
+            Información financiera
+        </h2>
+
+
+        <div class="data-privacy-card">
+
+
+            <div class="data-privacy-icon">
+                💰
+            </div>
+
+
+            <div class="data-privacy-content">
+
+                <strong>
+                    Movimientos y objetivos
+                </strong>
+
+
+                <p>
+                    Los ingresos, gastos y objetivos pertenecen
+                    al NIDO al que fueron registrados.
+                </p>
+
+
+                <div class="data-privacy-summary">
+
+                    <span>
+                        NIDO activo
+                    </span>
+
+
+                    <strong id="dataActiveNido">
+                        —
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         INFORMACIÓN DE SEGURIDAD
+    ================================================== -->
+
+    <section class="data-privacy-security">
+
+        <div class="data-privacy-security-icon">
+            🛡️
+        </div>
+
+
+        <div>
+
+            <strong>
+                Sobre la seguridad de tus datos
+            </strong>
+
+
+            <p>
+                Actualmente NIDO funciona como un prototipo
+                local. Los datos de esta versión se almacenan
+                en el navegador del dispositivo.
+            </p>
+
+
+            <p>
+                Cuando conectemos el sistema de cuentas,
+                NIDO utilizará un servidor y una base de datos
+                para gestionar de forma segura la información.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         ELIMINACIÓN
+    ================================================== -->
+
+    <section class="data-privacy-danger">
+
+        <div class="data-privacy-danger-icon">
+            🗑️
+        </div>
+
+
+        <div class="data-privacy-danger-content">
+
+            <strong>
+                Eliminación de datos
+            </strong>
+
+
+            <p>
+                La eliminación completa de los datos de la
+                cuenta estará disponible cuando NIDO tenga
+                conectado el sistema real de cuentas.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         BOTÓN VOLVER
+    ================================================== -->
+
+    <button
+        type="button"
+        id="backDataPrivacyButton"
+        class="secondary-button profile-back-button"
+    >
+        ← Volver
+    </button>
+
+
+</main>
+
+
+<!-- =====================================================
+     NAVEGACIÓN
+====================================================== -->
+
+<nav class="bottom-navigation">
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="dashboard"
+    >
+
+        <span class="nav-icon">
+            ⌂
+        </span>
+
+        <span>
+            Inicio
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="movements"
+    >
+
+        <span class="nav-icon">
+            ↕
+        </span>
+
+        <span>
+            Movimientos
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item"
+        type="button"
+        data-page="goals"
+    >
+
+        <span class="nav-icon">
+            ◎
+        </span>
+
+        <span>
+            Objetivos
+        </span>
+
+    </button>
+
+
+    <button
+        class="nav-item active"
+        type="button"
+        data-page="more"
+    >
+
+        <span class="nav-icon">
+            ☰
+        </span>
+
+        <span>
+            Más
+        </span>
+
+    </button>
+
+
+</nav>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script src="js/nido-storage.js"></script>
+<script src="js/data-privacy.js"></script>
+
+
+</body>
+
+</html>

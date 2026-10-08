@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Dashboard de NIDO"
+    >
+
+    <title>Inicio — NIDO</title>
+
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         DASHBOARD
+    ================================================== -->
+
+    <main class="dashboard-page">
+
+
+        <!-- =================================================
+             CABECERA
+        ================================================== -->
+
+        <header class="dashboard-header">
+
+
+            <div>
+
+                <p class="dashboard-greeting">
+                    Hola,
+                </p>
+
+                <h1 id="userName">
+                    Marta
+                </h1>
+
+            </div>
+
+
+            <div class="dashboard-logo">
+                NIDO
+            </div>
+
+
+        </header>
+
+
+        <!-- =================================================
+             NIDO
+        ================================================== -->
+
+        <section class="nido-summary">
+
+
+            <div class="nido-summary-top">
+
+                <div>
+
+                    <span class="summary-label">
+                        Tu NIDO
+                    </span>
+
+                    <h2 id="nidoName">
+                        Nuestra casa
+                    </h2>
+
+                </div>
+
+
+                <span
+                    id="nidoType"
+                    class="nido-type-label"
+                >
+                    Pareja
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =================================================
+             BALANCE
+        ================================================== -->
+
+        <section class="balance-card">
+
+
+            <div class="balance-header">
+
+                <span>
+                    Balance disponible
+                </span>
+
+                <span class="balance-icon">
+                    €
+                </span>
+
+            </div>
+
+
+            <div
+                id="balance"
+                class="balance-amount"
+            >
+                0,00 €
+            </div>
+
+
+            <div class="balance-divider"></div>
+
+
+            <div class="balance-details">
+
+
+                <div>
+
+                    <span>
+                        Ingresos
+                    </span>
+
+                    <strong
+                        id="totalIncome"
+                        class="income-value"
+                    >
+                        +0,00 €
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Gastos
+                    </span>
+
+                    <strong
+                        id="totalExpense"
+                        class="expense-value"
+                    >
+                        -0,00 €
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =================================================
+             ACCIONES RÁPIDAS
+        ================================================== -->
+
+        <section class="quick-actions">
+
+
+            <button
+                id="addIncomeButton"
+                class="quick-action income-action"
+                type="button"
+            >
+
+                <span class="quick-action-icon">
+                    +
+                </span>
+
+                <span>
+                    Añadir ingreso
+                </span>
+
+            </button>
+
+
+            <button
+                id="addExpenseButton"
+                class="quick-action expense-action"
+                type="button"
+            >
+
+                <span class="quick-action-icon">
+                    −
+                </span>
+
+                <span>
+                    Añadir gasto
+                </span>
+
+            </button>
+
+
+        </section>
+
+
+        <!-- =================================================
+             ÚLTIMOS MOVIMIENTOS
+        ================================================== -->
+
+        <section class="recent-section">
+
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-kicker">
+                        ACTIVIDAD
+                    </span>
+
+                    <h2>
+                        Últimos movimientos
+                    </h2>
+
+                </div>
+
+
+                <button
+                    id="viewAllMovements"
+                    class="view-all-button"
+                    type="button"
+                >
+                    Ver todos
+                </button>
+
+            </div>
+
+
+            <div
+                id="recentMovements"
+                class="recent-movements"
+            >
+
+
+                <div class="empty-state">
+
+                    <div class="empty-state-icon">
+                        €
+                    </div>
+
+                    <p>
+                        Todavía no hay movimientos.
+                    </p>
+
+                    <small>
+                        Añade tu primer ingreso o gasto.
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =================================================
+         NAVEGACIÓN
+    ================================================== -->
+
+    <nav class="bottom-navigation">
+
+
+        <button
+            class="nav-item active"
+            data-page="dashboard"
+            type="button"
+        >
+
+            <span class="nav-icon">
+                ⌂
+            </span>
+
+            <span>
+                Inicio
+            </span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            data-page="movements"
+            type="button"
+        >
+
+            <span class="nav-icon">
+                ≡
+            </span>
+
+            <span>
+                Movimientos
+            </span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            data-page="goals"
+            type="button"
+        >
+
+            <span class="nav-icon">
+                ◎
+            </span>
+
+            <span>
+                Objetivos
+            </span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            data-page="more"
+            type="button"
+        >
+
+            <span class="nav-icon">
+                •••
+            </span>
+
+            <span>
+                Más
+            </span>
+
+        </button>
+
+
+    </nav>
+
+
+   <script src="js/nido-storage.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

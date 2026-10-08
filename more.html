@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NIDO — Más opciones"
+    >
+
+    <title>NIDO — Más</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =====================================================
+         CABECERA
+    ====================================================== -->
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="dashboard-welcome">
+                NIDO
+            </p>
+
+            <h1>
+                Más
+            </h1>
+
+        </div>
+
+
+        <div class="dashboard-logo">
+            NIDO
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         CONTENIDO
+    ====================================================== -->
+
+    <main class="dashboard-content">
+
+
+        <!-- =================================================
+             CUENTA
+        ================================================== -->
+
+        <section class="more-section">
+
+            <h2>
+                Cuenta
+            </h2>
+
+
+            <button
+                type="button"
+                class="more-option"
+                data-option="profile"
+            >
+
+                <div class="more-option-icon">
+                    👤
+                </div>
+
+
+                <div class="more-option-content">
+
+                    <strong>
+                        Mi perfil
+                    </strong>
+
+                    <span>
+                        Tus datos personales
+                    </span>
+
+                </div>
+
+
+                <div class="more-option-arrow">
+                    ›
+                </div>
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             MIS NIDOS
+        ================================================== -->
+
+        <section class="more-section">
+
+            <h2>
+                Mi NIDO
+            </h2>
+
+
+            <!-- MIS NIDOS -->
+
+            <button
+                type="button"
+                class="more-option"
+                data-option="my-nidos"
+            >
+
+                <div class="more-option-icon">
+                    🏠
+                </div>
+
+
+                <div class="more-option-content">
+
+                    <strong>
+                        Mis NIDOS
+                    </strong>
+
+                    <span>
+                        Cambia entre tus diferentes NIDOS
+                    </span>
+
+                </div>
+
+
+                <div class="more-option-arrow">
+                    ›
+                </div>
+
+            </button>
+
+
+            <!-- PARTICIPANTES -->
+
+            <button
+                type="button"
+                class="more-option"
+                data-option="participants"
+            >
+
+                <div class="more-option-icon">
+                    👥
+                </div>
+
+
+                <div class="more-option-content">
+
+                    <strong>
+                        Participantes
+                    </strong>
+
+                    <span>
+                        Gestiona quién forma parte del NIDO
+                    </span>
+
+                </div>
+
+
+                <div class="more-option-arrow">
+                    ›
+                </div>
+
+            </button>
+
+
+            <!-- CONFIGURACIÓN -->
+
+            <button
+                type="button"
+                class="more-option"
+                data-option="settings"
+            >
+
+                <div class="more-option-icon">
+                    ⚙️
+                </div>
+
+
+                <div class="more-option-content">
+
+                    <strong>
+                        Configuración del NIDO
+                    </strong>
+
+                    <span>
+                        Personaliza vuestro espacio
+                    </span>
+
+                </div>
+
+
+                <div class="more-option-arrow">
+                    ›
+                </div>
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PREFERENCIAS
+        ================================================== -->
+
+        <section class="more-section">
+
+            <h2>
+                Preferencias
+            </h2>
+
+
+            <!-- NOTIFICACIONES -->
+
+            <button
+                type="button"
+                class="more-option"
+                data-option="notifications"
+            >
+
+                <div class="more-option-icon">
+                    🔔
+                </div>
+
+
+                <div class="more-option-content">
+
+                    <strong>
+                        Notificaciones
+                    </strong>
+
+                    <span>
+                        Gestiona tus avisos
+                    </span>
+
+                </div>
+
+
+                <div class="more-option-arrow">
+                    ›
+                </div>
+
+            </button>
+
+
+            <!-- SEGURIDAD -->
+
+            <button
+                type="button"
+                class="more-option"
+                data-option="security"
+            >
+
+                <div class="more-option-icon">
+                    🛡️
+                </div>
+
+
+                <div class="more-option-content">
+
+                    <strong>
+                        Seguridad
+                    </strong>
+
+                    <span>
+                        Privacidad y acceso
+                    </span>
+
+                </div>
+
+
+                <div class="more-option-arrow">
+                    ›
+                </div>
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CERRAR SESIÓN
+        ================================================== -->
+
+        <section class="more-section logout-section">
+
+            <button
+                type="button"
+                id="logoutButton"
+                class="logout-button"
+            >
+
+                🚪 Cerrar sesión
+
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         NAVEGACIÓN INFERIOR
+    ====================================================== -->
+
+    <nav class="bottom-navigation">
+
+
+        <!-- INICIO -->
+
+        <button
+            class="nav-item"
+            type="button"
+            data-page="dashboard"
+        >
+
+            <span class="nav-icon">
+                ⌂
+            </span>
+
+            <span>
+                Inicio
+            </span>
+
+        </button>
+
+
+        <!-- MOVIMIENTOS -->
+
+        <button
+            class="nav-item"
+            type="button"
+            data-page="movements"
+        >
+
+            <span class="nav-icon">
+                ↕
+            </span>
+
+            <span>
+                Movimientos
+            </span>
+
+        </button>
+
+
+        <!-- OBJETIVOS -->
+
+        <button
+            class="nav-item"
+            type="button"
+            data-page="goals"
+        >
+
+            <span class="nav-icon">
+                ◎
+            </span>
+
+            <span>
+                Objetivos
+            </span>
+
+        </button>
+
+
+        <!-- MÁS -->
+
+        <button
+            class="nav-item active"
+            type="button"
+            data-page="more"
+        >
+
+            <span class="nav-icon">
+                ☰
+            </span>
+
+            <span>
+                Más
+            </span>
+
+        </button>
+
+
+    </nav>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/more.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Unirse a un NIDO"
+    >
+
+    <title>Unirse a un NIDO — NIDO</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="dashboard-welcome">
+                NIDO
+            </p>
+
+            <h1>
+                Unirse a un NIDO
+            </h1>
+
+        </div>
+
+
+        <div class="dashboard-logo">
+            NIDO
+        </div>
+
+    </header>
+
+
+    <main class="dashboard-content">
+
+
+        <section class="transaction-page">
+
+            <div class="transaction-card">
+
+                <div class="transaction-icon">
+                    🔑
+                </div>
+
+
+                <h2>
+                    Únete a un NIDO
+                </h2>
+
+
+                <p class="transaction-description">
+                    Introduce el código de invitación que te han compartido.
+                </p>
+
+
+                <form id="joinNidoForm">
+
+                    <div class="form-group">
+
+                        <label for="nidoCode">
+                            Código de invitación
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="nidoCode"
+                            placeholder="Ej. NIDO-X7K92"
+                            autocomplete="off"
+                            maxlength="10"
+                            required
+                        >
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="primary-button"
+                    >
+                        UNIRME AL NIDO
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="backButton"
+                        class="secondary-button"
+                    >
+                        ← Volver
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+  <script src="js/nido-storage.js"></script>
+<script src="js/join-nido.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Participantes del NIDO"
+    >
+
+    <title>Participantes — NIDO</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body class="dashboard-page">
+
+
+    <!-- =====================================================
+         CABECERA
+    ====================================================== -->
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="dashboard-welcome">
+                NIDO
+            </p>
+
+            <h1>
+                Participantes
+            </h1>
+
+        </div>
+
+
+        <div class="dashboard-logo">
+            NIDO
+        </div>
+
+    </header>
+
+
+    <!-- =====================================================
+         CONTENIDO
+    ====================================================== -->
+
+    <main class="dashboard-content">
+
+
+        <!-- INFORMACIÓN DEL NIDO -->
+
+        <section class="more-section">
+
+            <h2>
+                Este NIDO
+            </h2>
+
+
+            <div class="participants-nido-card">
+
+                <div
+                    id="participantsNidoIcon"
+                    class="participants-nido-icon"
+                >
+                    🏠
+                </div>
+
+
+                <div class="participants-nido-info">
+
+                    <h3 id="participantsNidoName">
+                        Mi NIDO
+                    </h3>
+
+                    <p id="participantsNidoType">
+                        NIDO
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- PARTICIPANTES -->
+
+        <section class="more-section">
+
+            <h2>
+                Personas de este NIDO
+            </h2>
+
+
+            <div id="participantsList">
+
+                <!-- Se cargará con JavaScript -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- CÓDIGO DE INVITACIÓN -->
+
+        <section class="more-section">
+
+            <h2>
+                Invitar a alguien
+            </h2>
+
+
+            <div class="invite-card">
+
+                <p>
+                    Comparte este código para que otra persona
+                    pueda unirse a este NIDO.
+                </p>
+
+
+                <div
+                    id="nidoInviteCode"
+                    class="invite-code"
+                >
+                    NIDO-XXXXX
+                </div>
+
+
+                <button
+                    type="button"
+                    id="copyInviteCode"
+                    class="primary-button"
+                >
+                    Copiar código
+                </button>
+
+
+                <p
+                    id="copyMessage"
+                    class="copy-message"
+                ></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- VOLVER -->
+
+        <button
+            type="button"
+            id="backButton"
+            class="secondary-button"
+        >
+            ← Volver
+        </button>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         NAVEGACIÓN INFERIOR
+    ====================================================== -->
+
+    <nav class="bottom-navigation">
+
+
+        <button
+            class="nav-item"
+            type="button"
+            data-page="dashboard"
+        >
+
+            <span class="nav-icon">
+                ⌂
+            </span>
+
+            <span>
+                Inicio
+            </span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            type="button"
+            data-page="movements"
+        >
+
+            <span class="nav-icon">
+                ↕
+            </span>
+
+            <span>
+                Movimientos
+            </span>
+
+        </button>
+
+
+        <button
+            class="nav-item"
+            type="button"
+            data-page="goals"
+        >
+
+            <span class="nav-icon">
+                ◎
+            </span>
+
+            <span>
+                Objetivos
+            </span>
+
+        </button>
+
+
+        <button
+            class="nav-item active"
+            type="button"
+            data-page="more"
+        >
+
+            <span class="nav-icon">
+                ☰
+            </span>
+
+            <span>
+                Más
+            </span>
+
+        </button>
+
+    </nav>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/nido-storage.js"></script>
+
+    <script src="js/participants.js"></script>
+
+
+</body>
+
+</html>

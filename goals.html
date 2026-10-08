@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Objetivos — NIDO</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="dashboard-page">
+
+    <header class="dashboard-header">
+
+        <div>
+            <p class="dashboard-welcome">Nuestros</p>
+            <h1>Objetivos</h1>
+        </div>
+
+        <div class="dashboard-logo">
+            NIDO
+        </div>
+
+    </header>
+
+
+    <main class="dashboard-content">
+
+        <!-- INTRODUCCIÓN -->
+
+        <section class="goals-intro">
+
+            <h2>Lo que queremos conseguir</h2>
+
+            <p>
+                Crea objetivos de ahorro y avanzad juntos hacia ellos.
+            </p>
+
+        </section>
+
+
+        <!-- BOTÓN NUEVO OBJETIVO -->
+
+        <button
+            id="addGoalButton"
+            class="primary-button goal-add-button"
+            type="button"
+        >
+            + Crear objetivo
+        </button>
+
+
+        <!-- LISTA DE OBJETIVOS -->
+
+        <section class="goals-section">
+
+            <div id="goalsList">
+
+                <div class="empty-state">
+
+                    <div class="empty-state-icon">
+                        🎯
+                    </div>
+
+                    <h3>Aún no tenéis objetivos</h3>
+
+                    <p>
+                        Cread vuestro primer objetivo de ahorro.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- NAVEGACIÓN INFERIOR -->
+
+<nav class="bottom-navigation">
+
+    <button class="nav-item" type="button" data-page="dashboard">
+
+        <span class="nav-icon">⌂</span>
+
+        <span>Inicio</span>
+
+    </button>
+
+
+    <button class="nav-item" type="button" data-page="movements">
+
+        <span class="nav-icon">↕</span>
+
+        <span>Movimientos</span>
+
+    </button>
+
+
+    <button class="nav-item active" type="button" data-page="goals">
+
+        <span class="nav-icon">◎</span>
+
+        <span>Objetivos</span>
+
+    </button>
+
+
+    <button class="nav-item" type="button" data-page="more">
+
+        <span class="nav-icon">☰</span>
+
+        <span>Más</span>
+
+    </button>
+
+</nav>
+</nav>
+
+
+  <script src="js/nido-storage.js"></script>
+<script src="js/goals.js"></script>
+
+</body>
+
+</html>
